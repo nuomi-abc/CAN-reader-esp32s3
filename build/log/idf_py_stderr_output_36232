@@ -1,0 +1,100 @@
+Command: C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe F:\.espressif\v6.0.2\esp-idf\tools/idf_monitor.py -p COM9 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 F:\test_can\Experiment\esp32s3_can_receiver\build\esp32s3_can_receiver.elf F:\test_can\Experiment\esp32s3_can_receiver\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe' 'F:\.espressif\v6.0.2\esp-idf\tools\idf.py'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM9 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM9 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8908: [0;33mcall_start_cpu0[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4201050f: [0;33mapp_main[0m[0m at [0;32mF:/test_can/Experiment/esp32s3_can_receiver/main/main.c[0m[0m:[1;31m316[0m
+[0m--- 0x4037fa7f: [0;33m_esp_error_check_failed[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0m--- 0x4037fac1: [0;33mpanic_abort[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m464[0m
+[0m--- 0x4037fa89: [0;33mesp_system_abort[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x4037f18d: [0;33mabort[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_libc/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x4037fa7f: [0;33m_esp_error_check_failed[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0m--- 0x4201050f: [0;33mapp_main[0m[0m at [0;32mF:/test_can/Experiment/esp32s3_can_receiver/main/main.c[0m[0m:[1;31m316[0m
+[0m--- 0x42008624: [0;33mmain_task[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m206[0m
+[0m--- 0x4208bd02: [0;33mvPortTaskWrapper[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m147[0m
+[0m--- 0x4037fc11: [0;33mesp_restart_noos[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m165[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8908: [0;33mcall_start_cpu0[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4201050f: [0;33mapp_main[0m[0m at [0;32mF:/test_can/Experiment/esp32s3_can_receiver/main/main.c[0m[0m:[1;31m316[0m
+[0m--- 0x4037fa7f: [0;33m_esp_error_check_failed[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0m--- 0x4037fac1: [0;33mpanic_abort[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m464[0m
+[0m--- 0x4037fa89: [0;33mesp_system_abort[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x4037f18d: [0;33mabort[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_libc/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x4037fa7f: [0;33m_esp_error_check_failed[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0m--- 0x4201050f: [0;33mapp_main[0m[0m at [0;32mF:/test_can/Experiment/esp32s3_can_receiver/main/main.c[0m[0m:[1;31m316[0m
+[0m--- 0x42008624: [0;33mmain_task[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m206[0m
+[0m--- 0x4208bd02: [0;33mvPortTaskWrapper[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m147[0m
+[0m--- 0x4037fc11: [0;33mesp_restart_noos[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m165[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8908: [0;33mcall_start_cpu0[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x403826bc: [0;33mblock_set_used[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/heap/tlsf/tlsf_block_functions.h[0m[0m:[1;31m113[0m
+[0m--- (inlined by) [0;33mblock_mark_as_used[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/heap/tlsf/tlsf_block_functions.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mblock_prepare_used[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/heap/tlsf/tlsf_control_functions.h[0m[0m:[1;31m632[0m
+[0m--- (inlined by) [0;33mtlsf_malloc[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/heap/tlsf/tlsf.c[0m[0m:[1;31m445[0m
+[0m--- 0x400570e8: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x400570f3: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x420837b3: [0;33muart_hal_write_txfifo[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_hal_uart/uart_hal_iram.c[0m[0m:[1;31m27[0m
+[0m--- 0x403826bc: [0;33mblock_set_used[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/heap/tlsf/tlsf_block_functions.h[0m[0m:[1;31m113[0m
+[0m--- (inlined by) [0;33mblock_mark_as_used[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/heap/tlsf/tlsf_block_functions.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mblock_prepare_used[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/heap/tlsf/tlsf_control_functions.h[0m[0m:[1;31m632[0m
+[0m--- (inlined by) [0;33mtlsf_malloc[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/heap/tlsf/tlsf.c[0m[0m:[1;31m445[0m
+[0m--- 0x403826b9: [0;33mblock_set_used[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/heap/tlsf/tlsf_block_functions.h[0m[0m:[1;31m113[0m
+[0m--- (inlined by) [0;33mblock_mark_as_used[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/heap/tlsf/tlsf_block_functions.h[0m[0m:[1;31m185[0m
+[0m--- (inlined by) [0;33mblock_prepare_used[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/heap/tlsf/tlsf_control_functions.h[0m[0m:[1;31m632[0m
+[0m--- (inlined by) [0;33mtlsf_malloc[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/heap/tlsf/tlsf.c[0m[0m:[1;31m445[0m
+[0m--- 0x40381e52: [0;33mmulti_heap_malloc_impl[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/heap/multi_heap.c[0m[0m:[1;31m216[0m
+[0m--- 0x40376165: [0;33maligned_or_unaligned_alloc[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/heap/heap_caps_base.c[0m[0m:[1;31m93[0m
+[0m--- 0x4037622d: [0;33mheap_caps_aligned_alloc_base[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/heap/heap_caps_base.c[0m[0m:[1;31m180[0m
+[0m--- 0x4037613c: [0;33mheap_caps_aligned_alloc[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/heap/heap_caps.c[0m[0m:[1;31m561[0m
+[0m--- 0x403776c0: [0;33mspicommon_dma_setup_priv_buffer[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_driver_spi/src/gpspi/spi_common.c[0m[0m:[1;31m429[0m
+[0m--- 0x40378609: [0;33msetup_priv_desc[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c[0m[0m:[1;31m1201[0m
+[0m--- 0x403786a1: [0;33mspi_device_polling_start[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c[0m[0m:[1;31m1384[0m
+[0m--- 0x403787f2: [0;33mspi_device_polling_transmit[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c[0m[0m:[1;31m1459[0m
+[0m--- 0x42010819: [0;33mmcp2515_spi_transfer[0m[0m at [0;32mF:/test_can/Experiment/esp32s3_can_receiver/managed_components/espressif__esp_twai_mcp2515/esp_twai_mcp2515.c[0m[0m:[1;31m116[0m
+[0m--- 0x42010848: [0;33mmcp2515_read_reg[0m[0m at [0;32mF:/test_can/Experiment/esp32s3_can_receiver/managed_components/espressif__esp_twai_mcp2515/esp_twai_mcp2515.c[0m[0m:[1;31m140[0m
+[0m--- 0x403777fe: [0;33mmcp2515_gpio_isr[0m[0m at [0;32mF:/test_can/Experiment/esp32s3_can_receiver/managed_components/espressif__esp_twai_mcp2515/esp_twai_mcp2515.c[0m[0m:[1;31m351[0m
+[0m--- 0x40378ec9: [0;33mgpio_isr_loop[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_driver_gpio/src/gpio.c[0m[0m:[1;31m501[0m
+[0m--- 0x40378f3e: [0;33mgpio_intr_service[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_driver_gpio/src/gpio.c[0m[0m:[1;31m523[0m
+[0m--- 0x40378c7d: [0;33m_xt_lowint1[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1264[0m
+[0m--- 0x40378f5b: [0;33mgpio_intr_service[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_driver_gpio/src/gpio.c[0m[0m:[1;31m531[0m
+[0m--- 0x4208aea6: [0;33mesp_vApplicationIdleHook[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m58[0m
+[0m--- 0x4208c906: [0;33mprvIdleTask[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c[0m[0m:[1;31m4350[0m
+[0m--- 0x4208bd02: [0;33mvPortTaskWrapper[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m147[0m
+[0m--- 0x4037dbfe: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m64[0m
+[0m--- 0x4037dbfb: [0;33mxt_utils_wait_for_intr[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/xtensa/include/xt_utils.h[0m[0m:[1;31m82[0m
+[0m--- (inlined by) [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m55[0m
+[0m--- 0x4208aea6: [0;33mesp_vApplicationIdleHook[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m58[0m
+[0m--- 0x4208c906: [0;33mprvIdleTask[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c[0m[0m:[1;31m4350[0m
+[0m--- 0x4208bd02: [0;33mvPortTaskWrapper[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m147[0m
+[0m--- 0x4037fc11: [0;33mesp_restart_noos[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m165[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8908: [0;33mcall_start_cpu0[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4201050f: [0;33mapp_main[0m[0m at [0;32mF:/test_can/Experiment/esp32s3_can_receiver/main/main.c[0m[0m:[1;31m316[0m
+[0m--- 0x4037fa7f: [0;33m_esp_error_check_failed[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0m--- 0x4037fac1: [0;33mpanic_abort[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m464[0m
+[0m--- 0x4037fa89: [0;33mesp_system_abort[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x4037f18d: [0;33mabort[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_libc/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x4037fa7f: [0;33m_esp_error_check_failed[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0m--- 0x4201050f: [0;33mapp_main[0m[0m at [0;32mF:/test_can/Experiment/esp32s3_can_receiver/main/main.c[0m[0m:[1;31m316[0m
+[0m--- 0x42008624: [0;33mmain_task[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m206[0m
+[0m--- 0x4208bd02: [0;33mvPortTaskWrapper[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m147[0m
+[0m--- 0x4037fc11: [0;33mesp_restart_noos[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m165[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8908: [0;33mcall_start_cpu0[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4201050f: [0;33mapp_main[0m[0m at [0;32mF:/test_can/Experiment/esp32s3_can_receiver/main/main.c[0m[0m:[1;31m316[0m
+[0m--- 0x4037fa7f: [0;33m_esp_error_check_failed[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0m--- 0x4037fac1: [0;33mpanic_abort[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m464[0m
+[0m--- 0x4037fa89: [0;33mesp_system_abort[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x4037f18d: [0;33mabort[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_libc/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x4037fa7f: [0;33m_esp_error_check_failed[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0m--- 0x4201050f: [0;33mapp_main[0m[0m at [0;32mF:/test_can/Experiment/esp32s3_can_receiver/main/main.c[0m[0m:[1;31m316[0m
+[0m--- 0x42008624: [0;33mmain_task[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m206[0m
+[0m--- 0x4208bd02: [0;33mvPortTaskWrapper[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m147[0m
+[0m--- 0x4037fc11: [0;33mesp_restart_noos[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m165[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8908: [0;33mcall_start_cpu0[0m[0m at [0;32mF:/.espressif/v6.0.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[1;31m--- Error: GetOverlappedResult failed (PermissionError(13, '拒绝访问。', None, 5))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0m

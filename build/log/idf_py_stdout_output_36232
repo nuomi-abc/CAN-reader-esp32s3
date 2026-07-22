@@ -1,0 +1,1061 @@
+Command: C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe F:\.espressif\v6.0.2\esp-idf\tools/idf_monitor.py -p COM9 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 F:\test_can\Experiment\esp32s3_can_receiver\build\esp32s3_can_receiver.elf F:\test_can\Experiment\esp32s3_can_receiver\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe' 'F:\.espressif\v6.0.2\esp-idf\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xda0
+load:0x403cb700,len:0x2f54
+entry 0x403c8908
+[0;32mI (24) boot: ESP-IDF v6.0.2 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Jul 21 2026 22:17:42[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.4[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1e2e0h (123616) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0002e308 vaddr=3fc9a700 size=01d10h (  7440) load[0m
+[0;32mI (111) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=8eaech (584428) map[0m
+[0;32mI (219) esp_image: segment 3: paddr=000beb14 vaddr=3fc9c410 size=034fch ( 13564) load[0m
+[0;32mI (223) esp_image: segment 4: paddr=000c2018 vaddr=40374000 size=16678h ( 91768) load[0m
+[0;32mI (244) esp_image: segment 5: paddr=000d8698 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (254) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (254) boot: Disabling RNG early entropy source...[0m
+[0;32mI (264) cpu_start: Multicore app[0m
+[0;32mI (273) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (273) cpu_start: Pro cpu start user code[0m
+[0;32mI (273) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (275) app_init: Application information:[0m
+[0;32mI (279) app_init: Project name:     esp32s3_can_receiver[0m
+[0;32mI (284) app_init: App version:      1[0m
+[0;32mI (287) app_init: Compile time:     Jul 21 2026 22:17:23[0m
+[0;32mI (292) app_init: ELF file SHA256:  be8515f28...[0m
+[0;32mI (297) app_init: ESP-IDF:          v6.0.2[0m
+[0;32mI (300) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (304) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (308) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (312) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (318) heap_init: At 3FCA3990 len 00045D80 (279 KiB): RAM[0m
+[0;32mI (323) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (329) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (334) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (340) spi_flash: detected chip: generic[0m
+[0;32mI (343) spi_flash: flash io: dio[0m
+[0;33mW (346) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (359) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (365) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (372) main_task: Started on CPU0[0m
+[0;32mI (392) main_task: Calling app_main()[0m
+[0;32mI (412) pp: pp rom version: e7ae62f[0m
+[0;32mI (412) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (422) wifi:wifi driver task: 3fceeba8, prio:23, stack:6656, core=0[0m
+[0;32mI (432) wifi:wifi firmware version: 00ad238[0m
+[0;32mI (432) wifi:wifi certification version: v7.0[0m
+[0;32mI (432) wifi:config NVS flash: enabled[0m
+[0;32mI (432) wifi:config nano formatting: disabled[0m
+[0;32mI (432) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (442) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (442) wifi:Init management short buffer num: 32[0m
+[0;32mI (442) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (452) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (452) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (462) wifi:Init static rx buffer num: 10[0m
+[0;32mI (462) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (472) wifi_init: rx ba win: 6[0m
+[0;32mI (472) wifi_init: accept mbox: 6[0m
+[0;32mI (472) wifi_init: tcpip mbox: 32[0m
+[0;32mI (472) wifi_init: udp mbox: 6[0m
+[0;32mI (482) wifi_init: tcp mbox: 6[0m
+[0;32mI (482) wifi_init: tcp tx win: 5760[0m
+[0;32mI (482) wifi_init: tcp rx win: 5760[0m
+[0;32mI (492) wifi_init: tcp mss: 1440[0m
+[0;32mI (492) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (492) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (502) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (502) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (552) wifi:mode : sta (28:84:85:45:7c:44)[0m
+[0;32mI (552) wifi:enable tsf[0m
+[0;32mI (562) CAN_RX: 正在连接WiFi: Redmi K60[0m
+[0;32mI (562) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (572) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (582) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (642) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (672) wifi:connected with Redmi K60, aid = 3, channel 11, BW20, bssid = d2:c6:b2:0d:80:08[0m
+[0;32mI (672) wifi:security: WPA2-PSK, phy: bgn, rssi: -29, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (682) wifi:pm start, type: 1[0m
+
+[0;32mI (682) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (692) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (722) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (722) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (732) wifi:<ba-add>idx:0 (ifx:0, d2:c6:b2:0d:80:08), tid:0, ssn:0, winSize:64[0m
+[0;32mI (1752) esp_netif_handlers: sta ip: 192.168.45.54, mask: 255.255.255.0, gw: 192.168.45.92[0m
+[0;32mI (1752) CAN_RX: 获取到IP: 192.168.45.54[0m
+[0;32mI (1752) CAN_RX: WiFi连接成功[0m
+[0;32mI (1752) CAN_RX: UDP目标地址已设置: 192.168.45.251:8888[0m
+[1;31mE (1862) mcp2515: twai_new_node_mcp2515(786): switch to config mode failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x4201050f
+file: "./main/main.c" line 316
+func: app_main
+expression: twai_new_node_mcp2515(MCP2515_SPI_HOST, &node_cfg, &s_node)
+
+abort() was called at PC 0x4037fa7f on core 0
+
+
+Backtrace: 0x4037fac1:0x3fca7210 0x4037fa89:0x3fca7230 0x4037f18d:0x3fca7250 0x4037fa7f:0x3fca72c0 0x4201050f:0x3fca72f0 0x42008624:0x3fca7390 0x4208bd02:0x3fca73c0
+
+
+
+
+ELF file SHA256: be8515f28
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037fc11
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xda0
+load:0x403cb700,len:0x2f54
+entry 0x403c8908
+[0;32mI (29) boot: ESP-IDF v6.0.2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul 21 2026 22:17:42[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.2[0m
+[0;32mI (32) boot: efuse block revision: v1.4[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1e2e0h (123616) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=0002e308 vaddr=3fc9a700 size=01d10h (  7440) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=8eaech (584428) map[0m
+[0;32mI (224) esp_image: segment 3: paddr=000beb14 vaddr=3fc9c410 size=034fch ( 13564) load[0m
+[0;32mI (227) esp_image: segment 4: paddr=000c2018 vaddr=40374000 size=16678h ( 91768) load[0m
+[0;32mI (249) esp_image: segment 5: paddr=000d8698 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (258) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (258) boot: Disabling RNG early entropy source...[0m
+[0;32mI (269) cpu_start: Multicore app[0m
+[0;32mI (277) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (278) cpu_start: Pro cpu start user code[0m
+[0;32mI (278) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (279) app_init: Application information:[0m
+[0;32mI (283) app_init: Project name:     esp32s3_can_receiver[0m
+[0;32mI (288) app_init: App version:      1[0m
+[0;32mI (292) app_init: Compile time:     Jul 21 2026 22:17:23[0m
+[0;32mI (297) app_init: ELF file SHA256:  be8515f28...[0m
+[0;32mI (301) app_init: ESP-IDF:          v6.0.2[0m
+[0;32mI (305) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (309) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (313) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (317) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (323) heap_init: At 3FCA3990 len 00045D80 (279 KiB): RAM[0m
+[0;32mI (328) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (333) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (338) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (345) spi_flash: detected chip: generic[0m
+[0;32mI (347) spi_flash: flash io: dio[0m
+[0;33mW (350) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (363) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (369) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (376) main_task: Started on CPU0[0m
+[0;32mI (396) main_task: Calling app_main()[0m
+[0;32mI (416) pp: pp rom version: e7ae62f[0m
+[0;32mI (416) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (426) wifi:wifi driver task: 3fceeba8, prio:23, stack:6656, core=0[0m
+[0;32mI (436) wifi:wifi firmware version: 00ad238[0m
+[0;32mI (436) wifi:wifi certification version: v7.0[0m
+[0;32mI (436) wifi:config NVS flash: enabled[0m
+[0;32mI (436) wifi:config nano formatting: disabled[0m
+[0;32mI (436) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (446) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (446) wifi:Init management short buffer num: 32[0m
+[0;32mI (446) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (456) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (456) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (466) wifi:Init static rx buffer num: 10[0m
+[0;32mI (466) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (476) wifi_init: rx ba win: 6[0m
+[0;32mI (476) wifi_init: accept mbox: 6[0m
+[0;32mI (476) wifi_init: tcpip mbox: 32[0m
+[0;32mI (476) wifi_init: udp mbox: 6[0m
+[0;32mI (486) wifi_init: tcp mbox: 6[0m
+[0;32mI (486) wifi_init: tcp tx win: 5760[0m
+[0;32mI (486) wifi_init: tcp rx win: 5760[0m
+[0;32mI (496) wifi_init: tcp mss: 1440[0m
+[0;32mI (496) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (496) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (506) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (506) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (556) wifi:mode : sta (28:84:85:45:7c:44)[0m
+[0;32mI (556) wifi:enable tsf[0m
+[0;32mI (556) CAN_RX: 正在连接WiFi: Redmi K60[0m
+[0;32mI (576) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (576) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (586) wifi:state: auth -> init (0x1c0)[0m
+[0;33mW (596) CAN_RX: WiFi断开，尝试重连...[0m
+[0;32mI (2896) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2906) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (2986) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3016) wifi:connected with Redmi K60, aid = 1, channel 11, BW20, bssid = d2:c6:b2:0d:80:08[0m
+[0;32mI (3016) wifi:security: WPA2-PSK, phy: bgn, rssi: -34, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (3026) wifi:pm start, type: 1[0m
+
+[0;32mI (3026) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3036) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (3076) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (3076) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (3096) wifi:<ba-add>idx:0 (ifx:0, d2:c6:b2:0d:80:08), tid:0, ssn:1, winSize:64[0m
+[0;32mI (4116) esp_netif_handlers: sta ip: 192.168.45.54, mask: 255.255.255.0, gw: 192.168.45.92[0m
+[0;32mI (4116) CAN_RX: 获取到IP: 192.168.45.54[0m
+[0;32mI (4116) CAN_RX: WiFi连接成功[0m
+[0;32mI (4116) CAN_RX: UDP目标地址已设置: 192.168.45.251:8888[0m
+[1;31mE (4226) mcp2515: twai_new_node_mcp2515(786): switch to config mode failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x4201050f
+file: "./main/main.c" line 316
+func: app_main
+expression: twai_new_node_mcp2515(MCP2515_SPI_HOST, &node_cfg, &s_node)
+
+abort() was called at PC 0x4037fa7f on core 0
+
+
+Backtrace: 0x4037fac1:0x3fca7210 0x4037fa89:0x3fca7230 0x4037f18d:0x3fca7250 0x4037fa7f:0x3fca72c0 0x4201050f:0x3fca72f0 0x42008624:0x3fca7390 0x4208bd02:0x3fca73c0
+
+
+
+
+ELF file SHA256: be8515f28
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037fc11
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xda0
+load:0x403cb700,len:0x2f54
+entry 0x403c8908
+[0;32mI (29) boot: ESP-IDF v6.0.2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul 21 2026 22:17:42[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.2[0m
+[0;32mI (32) boot: efuse block revision: v1.4[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1e2e0h (123616) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=0002e308 vaddr=3fc9a700 size=01d10h (  7440) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=8eaech (584428) map[0m
+[0;32mI (224) esp_image: segment 3: paddr=000beb14 vaddr=3fc9c410 size=034fch ( 13564) load[0m
+[0;32mI (227) esp_image: segment 4: paddr=000c2018 vaddr=40374000 size=16678h ( 91768) load[0m
+[0;32mI (249) esp_image: segment 5: paddr=000d8698 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (258) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (258) boot: Disabling RNG early entropy source...[0m
+[0;32mI (269) cpu_start: Multicore app[0m
+[0;32mI (277) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (278) cpu_start: Pro cpu start user code[0m
+[0;32mI (278) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (279) app_init: Application information:[0m
+[0;32mI (283) app_init: Project name:     esp32s3_can_receiver[0m
+[0;32mI (288) app_init: App version:      1[0m
+[0;32mI (292) app_init: Compile time:     Jul 21 2026 22:17:23[0m
+[0;32mI (297) app_init: ELF file SHA256:  be8515f28...[0m
+[0;32mI (301) app_init: ESP-IDF:          v6.0.2[0m
+[0;32mI (305) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (309) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (313) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (317) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (323) heap_init: At 3FCA3990 len 00045D80 (279 KiB): RAM[0m
+[0;32mI (328) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (333) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (338) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (345) spi_flash: detected chip: generic[0m
+[0;32mI (347) spi_flash: flash io: dio[0m
+[0;33mW (350) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (363) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (369) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (376) main_task: Started on CPU0[0m
+[0;32mI (396) main_task: Calling app_main()[0m
+[0;32mI (416) pp: pp rom version: e7ae62f[0m
+[0;32mI (416) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (426) wifi:wifi driver task: 3fceeba8, prio:23, stack:6656, core=0[0m
+[0;32mI (436) wifi:wifi firmware version: 00ad238[0m
+[0;32mI (436) wifi:wifi certification version: v7.0[0m
+[0;32mI (436) wifi:config NVS flash: enabled[0m
+[0;32mI (436) wifi:config nano formatting: disabled[0m
+[0;32mI (436) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (446) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (446) wifi:Init management short buffer num: 32[0m
+[0;32mI (446) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (456) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (456) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (466) wifi:Init static rx buffer num: 10[0m
+[0;32mI (466) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (476) wifi_init: rx ba win: 6[0m
+[0;32mI (476) wifi_init: accept mbox: 6[0m
+[0;32mI (476) wifi_init: tcpip mbox: 32[0m
+[0;32mI (476) wifi_init: udp mbox: 6[0m
+[0;32mI (486) wifi_init: tcp mbox: 6[0m
+[0;32mI (486) wifi_init: tcp tx win: 5760[0m
+[0;32mI (486) wifi_init: tcp rx win: 5760[0m
+[0;32mI (496) wifi_init: tcp mss: 1440[0m
+[0;32mI (496) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (496) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (506) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (506) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (566) wifi:mode : sta (28:84:85:45:7c:44)[0m
+[0;32mI (566) wifi:enable tsf[0m
+[0;32mI (566) CAN_RX: 正在连接WiFi: Redmi K60[0m
+[0;32mI (586) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (586) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (606) wifi:state: auth -> init (0x1c0)[0m
+[0;33mW (616) CAN_RX: WiFi断开，尝试重连...[0m
+[0;32mI (2926) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2936) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3006) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3036) wifi:connected with Redmi K60, aid = 13, channel 11, BW20, bssid = d2:c6:b2:0d:80:08[0m
+[0;32mI (3036) wifi:security: WPA2-PSK, phy: bgn, rssi: -28, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (3046) wifi:pm start, type: 1[0m
+
+[0;32mI (3046) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3056) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (3076) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (3076) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (3076) wifi:<ba-add>idx:0 (ifx:0, d2:c6:b2:0d:80:08), tid:0, ssn:0, winSize:64[0m
+[0;32mI (4106) esp_netif_handlers: sta ip: 192.168.45.54, mask: 255.255.255.0, gw: 192.168.45.92[0m
+[0;32mI (4106) CAN_RX: 获取到IP: 192.168.45.54[0m
+[0;32mI (4106) CAN_RX: WiFi连接成功[0m
+[0;32mI (4106) CAN_RX: UDP目标地址已设置: 192.168.45.251:8888[0m
+[0;32mI (4186) CAN_RX: MCP2515 CAN节点已启动，波特率=500000，等待接收并转发...[0m
+[0;32mI (4186) main_task: Returned from app_main()[0m
+[0;32mI (5186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (6186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (7186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (8186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (9186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (10186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (11186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (12186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (13186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (14186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (15186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (16186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (17186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (18186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (19186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (20186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (21186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (22186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (23186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (24186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (25186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (26186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (27186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (28186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (29186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (30186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (31186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (32186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (33186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (34186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (35186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (36186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (37186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (38186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (39186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (40186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (41186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=255 REC=255 累计总线错误=0 队列剩余=4[0m
+[0;32mI (42186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=255 REC=255 累计总线错误=0 队列剩余=4[0m
+[0;32mI (43186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (44186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=255 REC=255 累计总线错误=0 队列剩余=4[0m
+[0;32mI (45186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=255 REC=255 累计总线错误=0 队列剩余=4[0m
+[0;32mI (46186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (47186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (48186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (49186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (50186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (51186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (52186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (53186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (54186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (55186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (56186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (57186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (58186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (59186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (60186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (61186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (62186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (63186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (64186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (65186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (66186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (67186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (68186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (69186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (70186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (71186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (72186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (73186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (74186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (75186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (76186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (77186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (78186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (79186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (80186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (81186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (82186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (83186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (84186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (85186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (86186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (87186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (88186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (89186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (90186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (91186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (92186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (93186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (94186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (95186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (96186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (97186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (98186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (99186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (100186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (101186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (102186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (103186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (104186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (105186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (106186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (107186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=255 REC=255 累计总线错误=0 队列剩余=4[0m
+[0;32mI (108186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=254 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (109186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (110186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (111186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (112186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (113186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (114186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (115186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (116186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (117186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (118186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (119186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (120186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (121186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (122186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (123186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (124186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (125186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (126186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (127186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (128186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (129186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (130186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (131186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=2 REC=6 累计总线错误=0 队列剩余=4[0m
+[0;32mI (132186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (133186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (134186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (135186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (136186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (137186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (138186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (139186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (140186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (141186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (142186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (143186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (144186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (145186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=255 REC=255 累计总线错误=0 队列剩余=4[0m
+[0;32mI (146186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=194 REC=4 累计总线错误=0 队列剩余=4[0m
+[0;32mI (147186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (148186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (149186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (150186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=194 REC=4 累计总线错误=0 队列剩余=4[0m
+[0;32mI (151186) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=255 REC=255 累计总线错误=0 队列剩余=4[0m
+[0;32mI (152236) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x403826bc  PS      : 0x00060c34  A0      : 0x80381e55  A1      : 0x3fc9cb70  
+A2      : 0x3fcea324  A3      : 0x0000000c  A4      : 0x00000028  A5      : 0x3fc9cd28  
+A6      : 0x00000000  A7      : 0x00000002  A8      : 0x0000000c  A9      : 0xfffffffe  
+A10     : 0x3fcea32c  A11     : 0xfffffffd  A12     : 0x3fce9748  A13     : 0x00000001  
+A14     : 0x00000024  A15     : 0xfffffffc  SAR     : 0x0000001b  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+Core  0 was running in ISR context:
+EPC1    : 0x420837b3  EPC2    : 0x00000000  EPC3    : 0x00000000  EPC4    : 0x403826bc
+
+
+Backtrace: 0x403826b9:0x3fc9cb70 0x40381e52:0x3fc9cb90 0x40376165:0x3fc9cbb0 0x4037622d:0x3fc9cbd0 0x4037613c:0x3fc9cc00 0x403776c0:0x3fc9cc20 0x40378609:0x3fc9cc60 0x403786a1:0x3fc9cca0 0x403787f2:0x3fc9cce0 0x42010819:0x3fc9cd00 0x42010848:0x3fc9cd50 0x403777fe:0x3fc9cd90 0x40378ec9:0x3fc9cdd0 0x40378f3e:0x3fc9cdf0 0x40378c7d:0x3fc9ce10 0x40378f5b:0x3fca79d0 0x4208aea6:0x3fca79f0 0x4208c906:0x3fca7a10 0x4208bd02:0x3fca7a30
+
+
+Core  1 register dump:
+PC      : 0x4037dbfe  PS      : 0x00060c34  A0      : 0x8208aea9  A1      : 0x3fca8030  
+A2      : 0x00000000  A3      : 0x00060023  A4      : 0x8037fe45  A5      : 0x3fca8830  
+A6      : 0x00060023  A7      : 0x00000000  A8      : 0x820160ee  A9      : 0x3fca7ff0  
+A10     : 0x00000000  A11     : 0x00000001  A12     : 0x8037fe45  A13     : 0x3fca49c0  
+A14     : 0x00060023  A15     : 0x00000003  SAR     : 0x00000000  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4037dbfb:0x3fca8030 0x4208aea6:0x3fca8050 0x4208c906:0x3fca8070 0x4208bd02:0x3fca8090
+
+
+
+
+ELF file SHA256: be8515f28
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037fc11
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xda0
+load:0x403cb700,len:0x2f54
+entry 0x403c8908
+[0;32mI (29) boot: ESP-IDF v6.0.2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul 21 2026 22:17:42[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.2[0m
+[0;32mI (32) boot: efuse block revision: v1.4[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1e2e0h (123616) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=0002e308 vaddr=3fc9a700 size=01d10h (  7440) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=8eaech (584428) map[0m
+[0;32mI (224) esp_image: segment 3: paddr=000beb14 vaddr=3fc9c410 size=034fch ( 13564) load[0m
+[0;32mI (227) esp_image: segment 4: paddr=000c2018 vaddr=40374000 size=16678h ( 91768) load[0m
+[0;32mI (249) esp_image: segment 5: paddr=000d8698 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (258) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (258) boot: Disabling RNG early entropy source...[0m
+[0;32mI (269) cpu_start: Multicore app[0m
+[0;32mI (277) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (278) cpu_start: Pro cpu start user code[0m
+[0;32mI (278) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (279) app_init: Application information:[0m
+[0;32mI (283) app_init: Project name:     esp32s3_can_receiver[0m
+[0;32mI (288) app_init: App version:      1[0m
+[0;32mI (292) app_init: Compile time:     Jul 21 2026 22:17:23[0m
+[0;32mI (297) app_init: ELF file SHA256:  be8515f28...[0m
+[0;32mI (301) app_init: ESP-IDF:          v6.0.2[0m
+[0;32mI (305) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (309) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (313) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (316) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (323) heap_init: At 3FCA3990 len 00045D80 (279 KiB): RAM[0m
+[0;32mI (328) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (333) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (338) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (345) spi_flash: detected chip: generic[0m
+[0;32mI (347) spi_flash: flash io: dio[0m
+[0;33mW (350) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (363) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (369) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (376) main_task: Started on CPU0[0m
+[0;32mI (396) main_task: Calling app_main()[0m
+[0;32mI (416) pp: pp rom version: e7ae62f[0m
+[0;32mI (416) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (426) wifi:wifi driver task: 3fceeba8, prio:23, stack:6656, core=0[0m
+[0;32mI (436) wifi:wifi firmware version: 00ad238[0m
+[0;32mI (436) wifi:wifi certification version: v7.0[0m
+[0;32mI (436) wifi:config NVS flash: enabled[0m
+[0;32mI (436) wifi:config nano formatting: disabled[0m
+[0;32mI (436) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (446) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (446) wifi:Init management short buffer num: 32[0m
+[0;32mI (446) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (456) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (456) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (466) wifi:Init static rx buffer num: 10[0m
+[0;32mI (466) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (476) wifi_init: rx ba win: 6[0m
+[0;32mI (476) wifi_init: accept mbox: 6[0m
+[0;32mI (476) wifi_init: tcpip mbox: 32[0m
+[0;32mI (476) wifi_init: udp mbox: 6[0m
+[0;32mI (486) wifi_init: tcp mbox: 6[0m
+[0;32mI (486) wifi_init: tcp tx win: 5760[0m
+[0;32mI (486) wifi_init: tcp rx win: 5760[0m
+[0;32mI (496) wifi_init: tcp mss: 1440[0m
+[0;32mI (496) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (496) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (506) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (506) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (556) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (606) wifi:mode : sta (28:84:85:45:7c:44)[0m
+[0;32mI (606) wifi:enable tsf[0m
+[0;32mI (606) CAN_RX: 正在连接WiFi: Redmi K60[0m
+[0;32mI (616) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (616) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (636) wifi:state: auth -> init (0x1c0)[0m
+[0;33mW (646) CAN_RX: WiFi断开，尝试重连...[0m
+[0;32mI (2946) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2966) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3056) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3106) wifi:connected with Redmi K60, aid = 16, channel 11, BW20, bssid = d2:c6:b2:0d:80:08[0m
+[0;32mI (3106) wifi:security: WPA2-PSK, phy: bgn, rssi: -41, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (3116) wifi:pm start, type: 1[0m
+
+[0;32mI (3116) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3116) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (3146) wifi:<ba-add>idx:0 (ifx:0, d2:c6:b2:0d:80:08), tid:0, ssn:0, winSize:64[0m
+[0;32mI (3206) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (3206) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (4176) esp_netif_handlers: sta ip: 192.168.45.54, mask: 255.255.255.0, gw: 192.168.45.92[0m
+[0;32mI (4176) CAN_RX: 获取到IP: 192.168.45.54[0m
+[0;32mI (4176) CAN_RX: WiFi连接成功[0m
+[0;32mI (4176) CAN_RX: UDP目标地址已设置: 192.168.45.251:8888[0m
+[1;31mE (4286) mcp2515: twai_new_node_mcp2515(786): switch to config mode failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x4201050f
+file: "./main/main.c" line 316
+func: app_main
+expression: twai_new_node_mcp2515(MCP2515_SPI_HOST, &node_cfg, &s_node)
+
+abort() was called at PC 0x4037fa7f on core 0
+
+
+Backtrace: 0x4037fac1:0x3fca7210 0x4037fa89:0x3fca7230 0x4037f18d:0x3fca7250 0x4037fa7f:0x3fca72c0 0x4201050f:0x3fca72f0 0x42008624:0x3fca7390 0x4208bd02:0x3fca73c0
+
+
+
+
+ELF file SHA256: be8515f28
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037fc11
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xda0
+load:0x403cb700,len:0x2f54
+entry 0x403c8908
+[0;32mI (29) boot: ESP-IDF v6.0.2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul 21 2026 22:17:42[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.2[0m
+[0;32mI (32) boot: efuse block revision: v1.4[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1e2e0h (123616) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=0002e308 vaddr=3fc9a700 size=01d10h (  7440) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=8eaech (584428) map[0m
+[0;32mI (224) esp_image: segment 3: paddr=000beb14 vaddr=3fc9c410 size=034fch ( 13564) load[0m
+[0;32mI (227) esp_image: segment 4: paddr=000c2018 vaddr=40374000 size=16678h ( 91768) load[0m
+[0;32mI (249) esp_image: segment 5: paddr=000d8698 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (258) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (258) boot: Disabling RNG early entropy source...[0m
+[0;32mI (269) cpu_start: Multicore app[0m
+[0;32mI (277) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (278) cpu_start: Pro cpu start user code[0m
+[0;32mI (278) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (279) app_init: Application information:[0m
+[0;32mI (283) app_init: Project name:     esp32s3_can_receiver[0m
+[0;32mI (288) app_init: App version:      1[0m
+[0;32mI (292) app_init: Compile time:     Jul 21 2026 22:17:23[0m
+[0;32mI (297) app_init: ELF file SHA256:  be8515f28...[0m
+[0;32mI (301) app_init: ESP-IDF:          v6.0.2[0m
+[0;32mI (305) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (309) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (313) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (316) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (323) heap_init: At 3FCA3990 len 00045D80 (279 KiB): RAM[0m
+[0;32mI (328) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (333) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (338) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (345) spi_flash: detected chip: generic[0m
+[0;32mI (347) spi_flash: flash io: dio[0m
+[0;33mW (350) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (363) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (369) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (376) main_task: Started on CPU0[0m
+[0;32mI (396) main_task: Calling app_main()[0m
+[0;32mI (416) pp: pp rom version: e7ae62f[0m
+[0;32mI (416) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (426) wifi:wifi driver task: 3fceeba8, prio:23, stack:6656, core=0[0m
+[0;32mI (436) wifi:wifi firmware version: 00ad238[0m
+[0;32mI (436) wifi:wifi certification version: v7.0[0m
+[0;32mI (436) wifi:config NVS flash: enabled[0m
+[0;32mI (436) wifi:config nano formatting: disabled[0m
+[0;32mI (436) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (446) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (446) wifi:Init management short buffer num: 32[0m
+[0;32mI (446) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (456) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (456) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (466) wifi:Init static rx buffer num: 10[0m
+[0;32mI (466) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (476) wifi_init: rx ba win: 6[0m
+[0;32mI (476) wifi_init: accept mbox: 6[0m
+[0;32mI (476) wifi_init: tcpip mbox: 32[0m
+[0;32mI (476) wifi_init: udp mbox: 6[0m
+[0;32mI (486) wifi_init: tcp mbox: 6[0m
+[0;32mI (486) wifi_init: tcp tx win: 5760[0m
+[0;32mI (486) wifi_init: tcp rx win: 5760[0m
+[0;32mI (496) wifi_init: tcp mss: 1440[0m
+[0;32mI (496) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (496) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (506) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (506) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (556) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (576) wifi:mode : sta (28:84:85:45:7c:44)[0m
+[0;32mI (576) wifi:enable tsf[0m
+[0;32mI (576) CAN_RX: 正在连接WiFi: Redmi K60[0m
+[0;32mI (586) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (586) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (596) wifi:state: auth -> init (0x1c0)[0m
+[0;33mW (606) CAN_RX: WiFi断开，尝试重连...[0m
+[0;32mI (2906) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2916) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (2996) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3026) wifi:connected with Redmi K60, aid = 5, channel 11, BW20, bssid = d2:c6:b2:0d:80:08[0m
+[0;32mI (3026) wifi:security: WPA2-PSK, phy: bgn, rssi: -48, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (3036) wifi:pm start, type: 1[0m
+
+[0;32mI (3036) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3036) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (3046) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (3056) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (3076) wifi:<ba-add>idx:0 (ifx:0, d2:c6:b2:0d:80:08), tid:0, ssn:0, winSize:64[0m
+[0;32mI (4096) esp_netif_handlers: sta ip: 192.168.45.54, mask: 255.255.255.0, gw: 192.168.45.92[0m
+[0;32mI (4096) CAN_RX: 获取到IP: 192.168.45.54[0m
+[0;32mI (4096) CAN_RX: WiFi连接成功[0m
+[0;32mI (4096) CAN_RX: UDP目标地址已设置: 192.168.45.251:8888[0m
+[1;31mE (4206) mcp2515: twai_new_node_mcp2515(786): switch to config mode failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x4201050f
+file: "./main/main.c" line 316
+func: app_main
+expression: twai_new_node_mcp2515(MCP2515_SPI_HOST, &node_cfg, &s_node)
+
+abort() was called at PC 0x4037fa7f on core 0
+
+
+Backtrace: 0x4037fac1:0x3fca7210 0x4037fa89:0x3fca7230 0x4037f18d:0x3fca7250 0x4037fa7f:0x3fca72c0 0x4201050f:0x3fca72f0 0x42008624:0x3fca7390 0x4208bd02:0x3fca73c0
+
+
+
+
+ELF file SHA256: be8515f28
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037fc11
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xda0
+load:0x403cb700,len:0x2f54
+entry 0x403c8908
+[0;32mI (29) boot: ESP-IDF v6.0.2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul 21 2026 22:17:42[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.2[0m
+[0;32mI (32) boot: efuse block revision: v1.4[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1e2e0h (123616) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=0002e308 vaddr=3fc9a700 size=01d10h (  7440) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=8eaech (584428) map[0m
+[0;32mI (224) esp_image: segment 3: paddr=000beb14 vaddr=3fc9c410 size=034fch ( 13564) load[0m
+[0;32mI (227) esp_image: segment 4: paddr=000c2018 vaddr=40374000 size=16678h ( 91768) load[0m
+[0;32mI (249) esp_image: segment 5: paddr=000d8698 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (258) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (258) boot: Disabling RNG early entropy source...[0m
+[0;32mI (269) cpu_start: Multicore app[0m
+[0;32mI (277) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (278) cpu_start: Pro cpu start user code[0m
+[0;32mI (278) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (279) app_init: Application information:[0m
+[0;32mI (283) app_init: Project name:     esp32s3_can_receiver[0m
+[0;32mI (288) app_init: App version:      1[0m
+[0;32mI (292) app_init: Compile time:     Jul 21 2026 22:17:23[0m
+[0;32mI (297) app_init: ELF file SHA256:  be8515f28...[0m
+[0;32mI (301) app_init: ESP-IDF:          v6.0.2[0m
+[0;32mI (305) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (309) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (313) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (316) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (323) heap_init: At 3FCA3990 len 00045D80 (279 KiB): RAM[0m
+[0;32mI (328) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (333) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (338) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (345) spi_flash: detected chip: generic[0m
+[0;32mI (347) spi_flash: flash io: dio[0m
+[0;33mW (350) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (363) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (369) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (376) main_task: Started on CPU0[0m
+[0;32mI (396) main_task: Calling app_main()[0m
+[0;32mI (416) pp: pp rom version: e7ae62f[0m
+[0;32mI (416) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (426) wifi:wifi driver task: 3fceeb24, prio:23, stack:6656, core=0[0m
+[0;32mI (436) wifi:wifi firmware version: 00ad238[0m
+[0;32mI (436) wifi:wifi certification version: v7.0[0m
+[0;32mI (436) wifi:config NVS flash: enabled[0m
+[0;32mI (436) wifi:config nano formatting: disabled[0m
+[0;32mI (436) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (446) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (446) wifi:Init management short buffer num: 32[0m
+[0;32mI (446) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (456) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (456) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (466) wifi:Init static rx buffer num: 10[0m
+[0;32mI (466) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (476) wifi_init: rx ba win: 6[0m
+[0;32mI (476) wifi_init: accept mbox: 6[0m
+[0;32mI (476) wifi_init: tcpip mbox: 32[0m
+[0;32mI (476) wifi_init: udp mbox: 6[0m
+[0;32mI (486) wifi_init: tcp mbox: 6[0m
+[0;32mI (486) wifi_init: tcp tx win: 5760[0m
+[0;32mI (486) wifi_init: tcp rx win: 5760[0m
+[0;32mI (496) wifi_init: tcp mss: 1440[0m
+[0;32mI (496) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (496) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (506) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (506) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (556) wifi:mode : sta (28:84:85:45:7c:44)[0m
+[0;32mI (556) wifi:enable tsf[0m
+[0;32mI (556) CAN_RX: 正在连接WiFi: Redmi K60[0m
+[0;32mI (566) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (566) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (586) wifi:state: auth -> init (0x1c0)[0m
+[0;33mW (596) CAN_RX: WiFi断开，尝试重连...[0m
+[0;32mI (2896) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2916) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (2986) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3026) wifi:connected with Redmi K60, aid = 10, channel 11, BW20, bssid = d2:c6:b2:0d:80:08[0m
+[0;32mI (3026) wifi:security: WPA2-PSK, phy: bgn, rssi: -48, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (3036) wifi:pm start, type: 1[0m
+
+[0;32mI (3036) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3046) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (3046) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (3056) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (3076) wifi:<ba-add>idx:0 (ifx:0, d2:c6:b2:0d:80:08), tid:0, ssn:0, winSize:64[0m
+[0;32mI (4096) esp_netif_handlers: sta ip: 192.168.45.54, mask: 255.255.255.0, gw: 192.168.45.92[0m
+[0;32mI (4096) CAN_RX: 获取到IP: 192.168.45.54[0m
+[0;32mI (4096) CAN_RX: WiFi连接成功[0m
+[0;32mI (4096) CAN_RX: UDP目标地址已设置: 192.168.45.251:8888[0m
+[0;32mI (4176) CAN_RX: MCP2515 CAN节点已启动，波特率=500000，等待接收并转发...[0m
+[0;32mI (4176) main_task: Returned from app_main()[0m
+[0;32mI (5176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (6176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (7176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (8176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (9176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (10176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (11176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (12176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (13176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (14176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (15176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (16176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (17176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (18176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (19176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (20176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (21176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (22176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+   9}A f��х�I=I}Q VE( my�K�  ��255 累计总线错误= J������=
+[0;32mI (25176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (26176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (27176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (28176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (29176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (30176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (31176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (32176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (33176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (34176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (35176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (36176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (37176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (38176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (39176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (40176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (41176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (42176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (43176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (44176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (45176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (46176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (47176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (48176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (49176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (50176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (51176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (52176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (53176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (54176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (55176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (56176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (57176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (58176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (59176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (60176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (61176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (62176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (63176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (64176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (65176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (66176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (67176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (68176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (69176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (70176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (71176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (72176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (73176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (74176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (75176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (76176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (77176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (78176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (79176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (80176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (81176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (82176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (83176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (84176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (85176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (86176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (87176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (88176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (89176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (90176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (91176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (92176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (93176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (94176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (95176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=255 REC=255 累计总线错误=0 队列剩余=4[0m
+[0;32mI (96176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (97176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (98176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (99176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (100176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (101176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (102176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (103176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (104176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (105176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (106176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (107176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (108176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (109176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (110176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (111176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (112176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (113176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (114176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (115176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (116176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (117176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (118176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (119176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (120176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (121176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (122176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (123176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (124176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (125176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (126176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (127176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (128176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (129176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (130176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (131176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (132176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (133176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (134176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (135176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (136176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (137176) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (18096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (19096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (20096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (21096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (22096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (23096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (24096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (25096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (26096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (27096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (28096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=4 累计总线错误=0 队列剩余=4[0m
+[0;32mI (29096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (30096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=194 REC=32 累计总线错误=0 队列剩余=4[0m
+[0;32mI (31096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=255 REC=255 累计总线错误=0 队列剩余=4[0m
+[0;32mI (32096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (33096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=255 REC=255 累计总线错误=0 队列剩余=4[0m
+[0;32mI (34096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=194 REC=64 累计总线错误=0 队列剩余=4[0m
+[0;32mI (35096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=194 REC=32 累计总线错误=0 队列剩余=4[0m
+[0;32mI (36096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=255 REC=255 累计总线错误=0 队列剩余=4[0m
+[0;32mI (37096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (38096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=2 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (39096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (40096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (41096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=2 REC=4 累计总线错误=0 队列剩余=4[0m
+[0;32mI (42096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=255 REC=255 累计总线错误=0 队列剩余=4[0m
+[0;32mI (43096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=194 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (44096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=240 REC=255 累计总线错误=0 队列剩余=4[0m
+[0;32mI (45096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=255 REC=255 累计总线错误=0 队列剩余=4[0m
+[0;32mI (46096) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m

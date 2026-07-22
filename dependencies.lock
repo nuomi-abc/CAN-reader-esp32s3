@@ -1,0 +1,21 @@
+dependencies:
+  espressif/esp_twai_mcp2515:
+    component_hash: 4e2d6bfe219606acf59a225a0f7fcbdf9babf3e429f2c6573d6c6989d027bda4
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=5.5'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 0.1.0
+  idf:
+    source:
+      type: idf
+    version: 6.0.2
+direct_dependencies:
+- espressif/esp_twai_mcp2515
+- idf
+manifest_hash: b002b521188f90a1dbb37a6a5c7afd79938d8e212d92c5be1dfbb6a7c8025b28
+target: esp32s3
+version: 3.0.0

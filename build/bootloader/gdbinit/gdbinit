@@ -1,0 +1,2 @@
+source F:/test_can/Experiment/esp32s3_can_receiver/build/bootloader/gdbinit/symbols
+source F:/test_can/Experiment/esp32s3_can_receiver/build/bootloader/gdbinit/connect

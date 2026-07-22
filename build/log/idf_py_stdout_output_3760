@@ -1,0 +1,2091 @@
+Command: C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe F:\.espressif\v6.0.2\esp-idf\tools/idf_monitor.py -p COM9 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 F:\test_can\Experiment\esp32s3_can_receiver\build\esp32s3_can_receiver.elf F:\test_can\Experiment\esp32s3_can_receiver\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe' 'F:\.espressif\v6.0.2\esp-idf\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xda0
+load:0x403cb700,len:0x2f54
+entry 0x403c8908
+[0;32mI (24) boot: ESP-IDF v6.0.2 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Jul 21 2026 22:17:42[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.4[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1e2e0h (123616) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0002e308 vaddr=3fc9a700 size=01d10h (  7440) load[0m
+[0;32mI (111) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=8eaach (584364) map[0m
+[0;32mI (219) esp_image: segment 3: paddr=000bead4 vaddr=3fc9c410 size=034fch ( 13564) load[0m
+[0;32mI (223) esp_image: segment 4: paddr=000c1fd8 vaddr=40374000 size=16678h ( 91768) load[0m
+[0;32mI (244) esp_image: segment 5: paddr=000d8658 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (254) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (254) boot: Disabling RNG early entropy source...[0m
+[0;32mI (264) cpu_start: Multicore app[0m
+[0;32mI (273) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (273) cpu_start: Pro cpu start user code[0m
+[0;32mI (273) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (275) app_init: Application information:[0m
+[0;32mI (279) app_init: Project name:     esp32s3_can_receiver[0m
+[0;32mI (284) app_init: App version:      1[0m
+[0;32mI (287) app_init: Compile time:     Jul 21 2026 22:17:23[0m
+[0;32mI (292) app_init: ELF file SHA256:  eb71eae90...[0m
+[0;32mI (297) app_init: ESP-IDF:          v6.0.2[0m
+[0;32mI (300) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (304) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (308) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (312) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (318) heap_init: At 3FCA3980 len 00045D90 (279 KiB): RAM[0m
+[0;32mI (323) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (329) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (334) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (340) spi_flash: detected chip: generic[0m
+[0;32mI (343) spi_flash: flash io: dio[0m
+[0;33mW (346) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (359) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (364) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (372) main_task: Started on CPU0[0m
+[0;32mI (392) main_task: Calling app_main()[0m
+[0;32mI (412) pp: pp rom version: e7ae62f[0m
+[0;32mI (412) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (422) wifi:wifi driver task: 3fceeba8, prio:23, stack:6656, core=0[0m
+[0;32mI (432) wifi:wifi firmware version: 00ad238[0m
+[0;32mI (432) wifi:wifi certification version: v7.0[0m
+[0;32mI (432) wifi:config NVS flash: enabled[0m
+[0;32mI (432) wifi:config nano formatting: disabled[0m
+[0;32mI (432) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (442) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (442) wifi:Init management short buffer num: 32[0m
+[0;32mI (442) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (452) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (452) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (462) wifi:Init static rx buffer num: 10[0m
+[0;32mI (462) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (472) wifi_init: rx ba win: 6[0m
+[0;32mI (472) wifi_init: accept mbox: 6[0m
+[0;32mI (472) wifi_init: tcpip mbox: 32[0m
+[0;32mI (472) wifi_init: udp mbox: 6[0m
+[0;32mI (482) wifi_init: tcp mbox: 6[0m
+[0;32mI (482) wifi_init: tcp tx win: 5760[0m
+[0;32mI (482) wifi_init: tcp rx win: 5760[0m
+[0;32mI (492) wifi_init: tcp mss: 1440[0m
+[0;32mI (492) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (492) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (502) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (502) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (552) wifi:mode : sta (28:84:85:45:7c:44)[0m
+[0;32mI (552) wifi:enable tsf[0m
+[0;32mI (552) CAN_RX: 正在连接WiFi: Redmi K60[0m
+[0;32mI (562) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (562) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (572) wifi:state: auth -> init (0x1c0)[0m
+[0;33mW (582) CAN_RX: WiFi断开，尝试重连...[0m
+[0;32mI (2882) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2892) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (2962) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (2992) wifi:connected with Redmi K60, aid = 1, channel 11, BW20, bssid = d2:c6:b2:0d:80:08[0m
+[0;32mI (2992) wifi:security: WPA2-PSK, phy: bgn, rssi: -18, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (3002) wifi:pm start, type: 1[0m
+
+[0;32mI (3002) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3012) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (3022) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (3022) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (3042) wifi:<ba-add>idx:0 (ifx:0, d2:c6:b2:0d:80:08), tid:0, ssn:0, winSize:64[0m
+[0;32mI (4062) esp_netif_handlers: sta ip: 192.168.45.54, mask: 255.255.255.0, gw: 192.168.45.92[0m
+[0;32mI (4062) CAN_RX: 获取到IP: 192.168.45.54[0m
+[0;32mI (4062) CAN_RX: WiFi连接成功[0m
+[0;32mI (4062) CAN_RX: UDP目标地址已设置: 192.168.45.251:8888[0m
+[0;32mI (4072) CAN_RX: MCP2515 CAN节点已启动，波特率=500000，等待接收并转发...[0m
+[0;32mI (4072) main_task: Returned from app_main()[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (4632) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (4762) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (4902) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (5042) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (5072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (5152) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (5272) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (5402) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (5542) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (5672) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (5782) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (5912) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (6052) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (6072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (6182) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (6322) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (6462) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (6592) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (6722) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (6852) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (6982) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (7072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (7092) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (7192) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (7322) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (7452) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (7582) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (7722) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FD 00 00 00 1E 00 00 ]
+[0;33mW (7892) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FE 00 00 00 1E 00 00 ]
+[0;33mW (8022) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (8072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[02 FF 00 00 00 1E 00 00 ]
+[0;33mW (8132) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FB 00 00 00 1E 00 00 ]
+[0;33mW (8262) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 F9 00 00 00 1E 00 00 ]
+[0;33mW (8362) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FD 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (8852) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (9072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (9122) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (9252) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (9382) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+[0;33mW (9482) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (9622) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (9742) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (9852) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (9982) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (10072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (10112) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (10292) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+[0;33mW (10422) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FE 00 00 00 1E 00 00 ]
+[0;33mW (10522) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FF 00 00 00 1E 00 00 ]
+[0;33mW (10662) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+[0;33mW (10802) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (10942) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;32mI (11072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;33mW (11072) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (11192) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (11312) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (11462) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (11592) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (11722) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (11862) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (11962) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (12072) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (12072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (12212) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (12332) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (12482) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (12642) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (12752) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (12882) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (13012) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (13072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (13132) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (13252) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (13352) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (13942) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (14072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (14082) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0E 00 00 00 1E 00 00 ]
+[0;33mW (14212) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0E 00 00 00 1E 00 00 ]
+[0;33mW (14322) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (14442) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (14582) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (14732) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 00 00 00 00 1E 00 00 ]
+[0;33mW (14862) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 00 00 00 00 1E 00 00 ]
+[0;33mW (14992) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (15072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+[0;33mW (15102) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+[0;33mW (15222) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (15362) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (15482) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (15592) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (15702) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (15832) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (15942) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (16042) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (16072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (16172) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (16312) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (16422) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (16552) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (16702) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (16832) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (16972) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (17072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (17102) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 10 00 00 00 1E 00 00 ]
+[0;33mW (17222) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 12 00 00 00 1E 00 00 ]
+[0;33mW (17372) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 12 00 00 00 1E 00 00 ]
+[0;33mW (17512) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 10 00 00 00 1E 00 00 ]
+[0;33mW (17632) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (17772) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (17902) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (18042) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (18072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (18152) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (18272) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+[0;33mW (18402) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 00 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[02 FF 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 00 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (18872) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (18982) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (19072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (19082) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0F 00 00 00 1E 00 00 ]
+[0;33mW (19212) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 11 00 00 00 1E 00 00 ]
+[0;33mW (19322) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 11 00 00 00 1E 00 00 ]
+[0;33mW (19492) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0F 00 00 00 1E 00 00 ]
+[0;33mW (19772) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (19872) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (20012) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (20072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (20112) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (20252) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (20362) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (20472) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (20612) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (20712) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (20902) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (21012) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (21072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (21132) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (21242) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (21372) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (21482) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (21632) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (21752) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (21872) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (21992) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (22072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+[0;33mW (22112) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (22232) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (22332) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 00 00 00 00 1E 00 00 ]
+[0;33mW (22472) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+[0;33mW (22602) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (22752) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (22892) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (23012) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (23072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (23112) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (23292) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (23802) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (23922) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (24072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (24082) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (24212) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (24332) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (24462) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (24572) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 00 00 00 00 1E 00 00 ]
+[0;33mW (24702) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (24832) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (24932) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (25072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (25072) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (25212) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (25342) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (25472) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (25602) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (25712) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (25842) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (25942) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (26072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (26092) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (26222) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (26342) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (26462) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (26582) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0E 00 00 00 1E 00 00 ]
+[0;33mW (26772) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0F 00 00 00 1E 00 00 ]
+[0;33mW (26882) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (27012) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (27072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (27112) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (27242) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (27382) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (27512) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (27652) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (27772) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (27962) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (28072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 10 00 00 00 1E 00 00 ]
+[0;33mW (28112) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (28222) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (28372) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (28882) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 00 00 00 00 1E 00 00 ]
+[0;33mW (29002) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (29072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[02 FF 00 00 00 1E 00 00 ]
+[0;33mW (29172) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 00 00 00 00 1E 00 00 ]
+[0;33mW (29312) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (29452) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (29572) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 00 00 00 ]
+[0;33mW (29672) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 06 00 00 00 ]
+[0;33mW (29792) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 42 00 02 64 00 00 00 ]
+[0;33mW (29912) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 81 00 03 64 00 00 00 ]
+[0;33mW (30022) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (30072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 C2 00 04 64 00 00 00 ]
+[0;33mW (30142) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 F6 00 06 0B 00 00 00 ]
+[0;33mW (30322) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 A3 00 06 00 00 00 00 ]
+[0;33mW (30452) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 4A 00 07 00 00 00 00 ]
+[0;33mW (30582) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 22 00 07 00 00 00 00 ]
+[0;33mW (30722) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 12 00 07 00 00 00 00 ]
+[0;33mW (30862) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 07 00 00 00 00 ]
+[0;33mW (31002) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (31072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 08 00 07 00 00 00 00 ]
+[0;33mW (31102) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 02 00 4C 00 00 ]
+[0;33mW (31222) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x000  DLC=0  DATA=[]
+[0;33mW (31372) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 F6 00 00 00 00 00 00 ]
+[0;33mW (31522) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 F4 00 00 00 1E 00 00 ]
+[0;33mW (31652) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (31782) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (31922) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 10 00 00 00 1E 00 00 ]
+[0;33mW (32042) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (32072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (32152) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (32272) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (32382) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (32492) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (32682) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (32812) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+[0;33mW (32932) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (33042) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (33072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (33162) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (33292) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 10 00 00 00 1E 00 00 ]
+[0;33mW (33892) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 10 00 00 00 1E 00 00 ]
+[0;33mW (34012) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (34072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 11 00 00 00 1E 00 00 ]
+[0;33mW (34122) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 10 00 00 00 1E 00 00 ]
+[0;33mW (34222) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (34342) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 08 00 00 00 ]
+[0;33mW (34462) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 53 00 01 64 00 00 00 ]
+[0;33mW (34582) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 8F 00 02 64 00 00 00 ]
+[0;33mW (34692) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 BD 00 03 64 00 00 00 ]
+[0;33mW (34802) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 E4 00 04 64 00 00 00 ]
+[0;33mW (34922) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[04 03 00 05 64 00 00 00 ]
+[0;33mW (35052) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (35072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[04 39 00 07 64 00 00 00 ]
+[0;33mW (35182) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[04 96 00 09 64 00 00 00 ]
+[0;33mW (35342) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[05 19 00 0A 45 00 00 00 ]
+[0;33mW (35462) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[05 B7 00 0C 03 00 00 00 ]
+[0;33mW (35602) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[05 3A 00 0C 00 00 00 00 ]
+[0;33mW (35722) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[04 C0 00 0B 00 00 00 00 ]
+[0;33mW (35872) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[04 73 00 0B 00 00 00 00 ]
+[0;33mW (36002) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (36072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[04 1F 00 09 00 00 00 00 ]
+[0;33mW (36272) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 FF 00 09 00 00 00 00 ]
+[0;33mW (36412) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 E6 00 08 05 00 00 00 ]
+[0;33mW (36552) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[04 4D 00 09 18 00 00 00 ]
+[0;33mW (36682) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[05 22 00 0B 15 00 00 00 ]
+[0;33mW (36812) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[05 41 00 0B 00 00 00 00 ]
+[0;33mW (36952) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (37072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[04 D2 00 0B 00 00 00 00 ]
+[0;33mW (37082) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[04 95 00 0B 00 00 00 00 ]
+[0;33mW (37192) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[04 57 00 0A 00 00 00 00 ]
+[0;33mW (37342) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[04 3A 00 09 02 00 00 00 ]
+[0;33mW (37492) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[04 8D 00 0A 15 00 00 00 ]
+[0;33mW (37612) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[05 46 00 0C 24 00 00 00 ]
+[0;33mW (37742) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[05 C7 00 0D 25 00 00 00 ]
+[0;33mW (37852) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[06 43 00 0E 24 00 00 00 ]
+[0;33mW (37962) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (38072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[06 C1 00 0F 00 00 00 00 ]
+[0;33mW (38102) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[06 9E 00 0F 00 00 00 00 ]
+[0;33mW (38222) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[06 78 00 0F 00 00 00 00 ]
+[0;33mW (38362) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[06 4F 00 0E 00 0A 00 00 ]
+ID=0x100  DLC=8  DATA=[05 DC 00 04 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[04 A0 00 01 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[03 A6 00 00 00 64 00 00 ]
+[0;33mW (38902) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 40 00 00 00 00 00 00 ]
+[0;33mW (39032) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (39072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 1A 00 00 00 00 00 00 ]
+[0;33mW (39142) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 10 00 00 00 1E 00 00 ]
+[0;33mW (39242) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (39392) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (39522) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 05 00 00 00 ]
+[0;33mW (39652) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 4A 00 01 52 00 00 00 ]
+[0;33mW (39802) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 D5 00 03 47 00 00 00 ]
+[0;33mW (39942) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[04 58 00 05 13 00 00 00 ]
+[0;32mI (40072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;33mW (40072) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[04 B0 00 07 11 00 00 00 ]
+[0;33mW (40212) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[04 EB 00 09 17 00 00 00 ]
+[0;33mW (40342) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[05 2E 00 0A 1A 00 00 00 ]
+[0;33mW (40482) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[05 80 00 0C 23 00 00 00 ]
+[0;33mW (40602) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[05 CE 00 0D 24 00 00 00 ]
+[0;33mW (40712) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[06 4E 00 0F 2C 00 00 00 ]
+[0;33mW (40832) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[07 12 00 11 32 00 00 00 ]
+[0;33mW (41002) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (41072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[07 9B 00 13 32 00 00 00 ]
+[0;33mW (41102) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[08 2E 00 14 31 00 00 00 ]
+[0;33mW (41212) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[09 04 00 16 33 00 00 00 ]
+[0;33mW (41342) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[09 9A 00 18 32 00 00 00 ]
+[0;33mW (41442) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[09 F6 00 19 32 00 00 00 ]
+[0;33mW (41552) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[0A 39 00 1B 32 00 00 00 ]
+[0;33mW (41682) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[0A 4D 00 1D 32 00 00 00 ]
+[0;33mW (41812) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[0A 39 00 1F 32 00 00 00 ]
+[0;33mW (41942) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (42072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[0A 44 00 24 64 00 00 00 ]
+[0;33mW (42142) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[0A A6 00 26 64 00 00 00 ]
+[0;33mW (42272) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[0B 2F 00 28 64 00 00 00 ]
+[0;33mW (42422) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[0B CE 00 2B 64 00 00 00 ]
+[0;33mW (42552) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[0C 63 00 2C 01 00 00 00 ]
+[0;33mW (42682) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[0C 44 00 2A 00 19 00 00 ]
+[0;33mW (42822) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[0B CD 00 23 00 64 00 00 ]
+[0;33mW (42952) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (43072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[0A D6 00 1D 00 64 00 00 ]
+[0;33mW (43102) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[08 9B 00 13 00 64 00 00 ]
+[0;33mW (43322) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[07 E2 00 11 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[07 18 00 06 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[05 ED 00 04 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[04 79 00 01 00 64 00 00 ]
+[0;33mW (43822) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 B8 00 00 00 64 00 00 ]
+[0;33mW (43922) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 41 00 00 00 64 00 00 ]
+[0;33mW (44062) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (44072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 11 00 00 00 64 00 00 ]
+[0;33mW (44202) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FE 00 00 00 1E 00 00 ]
+[0;33mW (44312) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+[0;33mW (44542) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (44672) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (44812) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (44952) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (45072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (45092) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FB 00 00 00 1E 00 00 ]
+[0;33mW (45212) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 F9 00 00 00 1E 00 00 ]
+[0;33mW (45352) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FE 00 00 00 1E 00 00 ]
+[0;33mW (45492) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (45692) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (45822) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (45952) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (46072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (46092) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (46232) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (46382) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (46502) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (46652) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (46782) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (46912) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (47012) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (47072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+ID=0x1B8  DLC=8  DATA=[B7 30 60 EA 66 8A A5 36 ]
+[0;33mW (47142) CAN_RX: UDP发送失败: errno 12[0m
+[0;33mW (47142) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (47252) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (47402) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (47522) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (47662) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (47782) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (47922) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (48072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 00 00 00 00 1E 00 00 ]
+[0;33mW (48082) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (48222) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (48352) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (48892) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (49002) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (49072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (49142) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (49272) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (49402) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (49502) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (49612) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (49712) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (49842) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (49942) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (50072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (50082) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (50222) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (50382) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (50532) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (50652) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (50752) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (50902) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (51022) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (51072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (51122) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (51272) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+[0;33mW (51422) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+[0;33mW (51532) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (51662) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (51772) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (51912) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (52052) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (52072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (52192) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (52332) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (52432) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (52572) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (52702) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (52842) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (52972) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (53072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (53112) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FE 00 00 00 1E 00 00 ]
+[0;33mW (53222) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FE 00 00 00 1E 00 00 ]
+[0;33mW (53352) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (53872) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (54042) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (54072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (54182) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (54312) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0F 00 00 00 1E 00 00 ]
+[0;33mW (54452) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (54582) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (54722) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (54852) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (54952) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (55072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (55092) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FF 00 00 00 1E 00 00 ]
+[0;33mW (55222) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+[0;33mW (55362) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (55502) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (55612) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (55732) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 10 00 00 00 1E 00 00 ]
+[0;33mW (55832) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 10 00 00 00 1E 00 00 ]
+[0;33mW (55972) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (56072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 10 00 00 00 1E 00 00 ]
+[0;33mW (56122) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0F 00 00 00 1E 00 00 ]
+[0;33mW (56242) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (56372) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (56502) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (56612) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (56742) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (56852) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (56982) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (57072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (57102) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (57222) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (57342) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0E 00 00 00 1E 00 00 ]
+[0;33mW (57572) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (57702) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (57832) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (57932) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (58072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (58072) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (58172) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (58282) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (58822) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (58962) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (59072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (59082) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (59222) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (59362) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (59492) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (59612) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (59742) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0F 00 00 00 1E 00 00 ]
+[0;33mW (59862) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0F 00 00 00 1E 00 00 ]
+[0;33mW (60002) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (60072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (60112) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (60232) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (60342) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (60462) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (60572) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (60712) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (60832) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (60952) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (61072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (61192) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (61322) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (61422) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (61562) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (61672) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (61802) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (61922) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (62022) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (62072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (62152) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (62322) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (62432) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (62562) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (62692) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (62802) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (62942) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;32mI (63072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;33mW (63072) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (63182) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (63322) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (63922) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (64062) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (64072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (64212) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (64332) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (64432) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (64562) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (64702) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (64832) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (64932) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (65062) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (65072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+[0;33mW (65202) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (65342) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 00 00 00 00 1E 00 00 ]
+[0;33mW (65472) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+[0;33mW (65622) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 00 00 00 00 1E 00 00 ]
+[0;33mW (65752) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FF 00 00 00 1E 00 00 ]
+[0;33mW (65892) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+[0;33mW (66022) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (66072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (66162) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (66292) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (66432) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (66582) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (66692) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (66812) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (66932) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (67072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (67072) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (67182) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (67282) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (67392) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (67532) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (67652) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (67802) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (67922) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (68032) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (68072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (68272) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (68762) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (68902) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (69022) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (69072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (69172) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+[0;33mW (69312) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (69442) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (69542) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (69672) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0F 00 00 00 1E 00 00 ]
+[0;33mW (69792) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 11 00 00 00 1E 00 00 ]
+[0;33mW (69912) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 11 00 00 00 1E 00 00 ]
+[0;33mW (70052) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (70072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 0F 00 00 00 1E 00 00 ]
+[0;33mW (70182) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (70322) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (70462) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (70622) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (70732) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+[0;33mW (70862) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (70972) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (71072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (71072) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (71212) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (71342) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (71472) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (71572) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (71702) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (71832) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0E 00 00 00 1E 00 00 ]
+[0;33mW (71972) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (72072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 0F 00 00 00 1E 00 00 ]
+[0;33mW (72072) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0E 00 00 00 1E 00 00 ]
+[0;33mW (72212) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (72342) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (72442) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (72572) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (72692) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (72812) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (73012) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (73072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (73142) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (73282) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (73782) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (73892) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (74022) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (74072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 0F 00 00 00 1E 00 00 ]
+[0;33mW (74192) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 10 00 00 00 1E 00 00 ]
+[0;33mW (74302) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 12 00 00 00 1E 00 00 ]
+[0;33mW (74422) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 13 00 00 00 1E 00 00 ]
+[0;33mW (74562) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 12 00 00 00 1E 00 00 ]
+[0;33mW (74712) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (74832) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (74972) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (75072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (75122) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (75242) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (75382) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (75492) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (75612) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (75762) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (75902) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (76032) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (76072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (76162) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (76312) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 00 00 00 00 1E 00 00 ]
+[0;33mW (76542) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+[0;33mW (76642) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (76792) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (76892) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0F 00 00 00 1E 00 00 ]
+[0;33mW (77022) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (77072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (77152) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (77262) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (77372) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (77522) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (77642) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (77772) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (77882) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (78012) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (78072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (78142) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (78282) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (78392) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (78882) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (79002) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (79072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 10 00 00 00 1E 00 00 ]
+[0;33mW (79122) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0E 00 00 00 1E 00 00 ]
+[0;33mW (79222) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (79352) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (79492) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (79622) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (79782) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (79902) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (80002) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (80072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (80112) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (80242) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (80372) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FF 00 00 00 1E 00 00 ]
+[0;33mW (80502) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FD 00 00 00 1E 00 00 ]
+[0;33mW (80612) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FB 00 00 00 1E 00 00 ]
+[0;33mW (80732) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FE 00 00 00 1E 00 00 ]
+[0;33mW (80842) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FE 00 00 00 1E 00 00 ]
+[0;33mW (80952) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (81072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (81082) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (81252) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (81382) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (81522) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (81622) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (81722) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0F 00 00 00 1E 00 00 ]
+[0;33mW (81842) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 10 00 00 00 1E 00 00 ]
+[0;33mW (81992) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (82072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 0F 00 00 00 1E 00 00 ]
+[0;33mW (82112) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0E 00 00 00 1E 00 00 ]
+[0;33mW (82242) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (82412) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (82512) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (82652) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (82782) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (82912) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FE 00 00 00 1E 00 00 ]
+[0;33mW (83062) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (83072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[02 FE 00 00 00 1E 00 00 ]
+[0;33mW (83192) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FE 00 00 00 1E 00 00 ]
+[0;33mW (83342) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 00 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[02 FE 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[02 FF 00 00 00 1E 00 00 ]
+[0;33mW (83852) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (83992) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (84072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[02 FF 00 00 00 1E 00 00 ]
+[0;33mW (84102) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FF 00 00 00 1E 00 00 ]
+[0;33mW (84222) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 00 00 00 00 1E 00 00 ]
+[0;33mW (84332) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (84472) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (84592) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (84712) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (84812) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0F 00 00 00 1E 00 00 ]
+[0;33mW (84912) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 12 00 00 00 1E 00 00 ]
+[0;33mW (85022) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (85072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 13 00 00 00 1E 00 00 ]
+[0;33mW (85152) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 12 00 00 00 1E 00 00 ]
+[0;33mW (85282) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0E 00 00 00 1E 00 00 ]
+[0;33mW (85382) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (85522) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (85662) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (85802) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (85962) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (86072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (86112) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (86232) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+[0;33mW (86372) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 00 00 00 00 1E 00 00 ]
+[0;33mW (86472) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FF 00 00 00 1E 00 00 ]
+[0;33mW (86582) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+[0;33mW (86712) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+[0;33mW (86812) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (86922) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (87072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (87122) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (87252) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 00 00 00 00 1E 00 00 ]
+[0;33mW (87372) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 00 00 00 00 1E 00 00 ]
+[0;33mW (87492) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 00 00 00 00 1E 00 00 ]
+[0;33mW (87622) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (87722) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (87862) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (87972) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (88072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 00 00 00 00 1E 00 00 ]
+[0;33mW (88092) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FE 00 00 00 1E 00 00 ]
+[0;33mW (88292) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 00 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (88782) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (88892) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+ID=0x1B8  DLC=8  DATA=[B7 30 60 EA 66 8A A5 36 ]
+[0;33mW (89002) CAN_RX: UDP发送失败: errno 12[0m
+[0;33mW (89002) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (89072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (89122) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (89232) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (89342) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (89482) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0E 00 00 00 1E 00 00 ]
+[0;33mW (89622) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (89742) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (89852) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (89992) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (90072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (90102) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+[0;33mW (90232) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (90362) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (90502) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (90632) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (90742) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (90862) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (90972) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (91072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (91102) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0E 00 00 00 1E 00 00 ]
+[0;33mW (91222) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (91332) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (91462) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (91592) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (91722) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (91872) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (91992) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (92072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 0E 00 00 00 1E 00 00 ]
+[0;33mW (92102) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0E 00 00 00 1E 00 00 ]
+[0;33mW (92202) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (92322) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (92452) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (92592) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (92752) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (92862) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (93002) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (93072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (93112) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (93242) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (93342) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (93822) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (93952) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (94072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (94112) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (94212) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (94352) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[01 87 00 00 00 0F 00 00 ]
+[0;33mW (94482) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0F 00 00 00 1E 00 00 ]
+[0;33mW (94592) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0E 00 00 00 1E 00 00 ]
+[0;33mW (94722) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (94872) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (94992) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (95072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (95102) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0F 00 00 00 1E 00 00 ]
+[0;33mW (95232) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0F 00 00 00 1E 00 00 ]
+[0;33mW (95372) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (95512) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (95642) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (95792) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (95912) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (96022) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (96072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (96142) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (96272) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (96402) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (96542) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (96672) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (96792) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (96922) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (97062) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (97072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (97192) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (97322) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (97462) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (97582) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (97692) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (97822) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (97952) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (98062) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (98072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (98182) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (98342) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (98792) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 12 00 00 00 1E 00 00 ]
+[0;33mW (98932) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (99072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 12 00 00 00 1E 00 00 ]
+[0;33mW (99082) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0F 00 00 00 1E 00 00 ]
+[0;33mW (99202) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 10 00 00 00 1E 00 00 ]
+[0;33mW (99302) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0F 00 00 00 1E 00 00 ]
+[0;33mW (99412) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (99552) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (99692) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (99812) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (99952) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (100072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 0F 00 00 00 1E 00 00 ]
+[0;33mW (100112) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 11 00 00 00 1E 00 00 ]
+[0;33mW (100232) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0F 00 00 00 1E 00 00 ]
+[0;33mW (100362) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (100502) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (100642) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (100782) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (100902) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (101032) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (101072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (101202) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (101332) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (101482) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (101602) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (101732) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (101882) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (102002) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (102072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 10 00 00 00 1E 00 00 ]
+[0;33mW (102112) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 11 00 00 00 1E 00 00 ]
+[0;33mW (102242) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0F 00 00 00 1E 00 00 ]
+[0;33mW (102342) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (102482) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (102612) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (102742) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (102872) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (102982) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (103072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (103082) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (103212) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (103352) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+ID=0x1B8  DLC=8  DATA=[B7 30 60 EA 66 8A A5 36 ]
+[0;33mW (103922) CAN_RX: UDP发送失败: errno 12[0m
+[0;33mW (103922) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (104062) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (104072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (104202) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (104332) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (104452) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (104572) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (104712) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (104842) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (104972) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (105072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (105102) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (105212) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+[0;33mW (105342) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FF 00 00 00 1E 00 00 ]
+[0;33mW (105482) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FD 00 00 00 1E 00 00 ]
+[0;33mW (105582) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (105712) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 00 00 00 00 1E 00 00 ]
+[0;33mW (105912) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FF 00 00 00 1E 00 00 ]
+[0;33mW (106012) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (106072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 00 00 00 00 1E 00 00 ]
+[0;33mW (106132) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 00 00 00 00 1E 00 00 ]
+[0;33mW (106262) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+[0;33mW (106392) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (106522) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (106662) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (106802) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (106922) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (107062) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (107072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (107192) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (107322) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (107432) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0E 00 00 00 1E 00 00 ]
+[0;33mW (107542) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (107672) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (107802) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (107932) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (108072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (108072) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (108212) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (108352) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (108882) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (108982) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (109072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (109112) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (109222) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (109392) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (109512) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (109622) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (109762) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (109892) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (110002) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (110072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (110112) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (110232) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (110352) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (110472) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (110612) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+[0;33mW (110712) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+[0;33mW (110842) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+[0;33mW (110952) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (111072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (111102) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 06 00 00 00 1E 00 00 ]
+[0;33mW (111222) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (111362) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (111512) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FF 00 00 00 1E 00 00 ]
+[0;33mW (111632) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FD 00 00 00 1E 00 00 ]
+[0;33mW (111732) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 00 00 00 00 1E 00 00 ]
+[0;33mW (111882) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (111992) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (112072) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (112132) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (112252) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0E 00 00 00 1E 00 00 ]
+[0;33mW (112352) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (112492) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0B 00 00 00 1E 00 00 ]
+[0;33mW (112602) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (112702) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0E 00 00 00 1E 00 00 ]
+[0;33mW (112832) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0E 00 00 00 1E 00 00 ]
+[0;33mW (112952) CAN_RX: UDP发送失败: errno 12[0m
+[1;31mE (113072) spi_master: spi_device_polling_start(1380): Cannot send polling transaction while the previous polling transaction is not terminated.[0m
+
+abort() was called at PC 0x403770f3 on core 0
+
+
+Backtrace: 0x4037fac1:0x3fc9cb10 0x4037fa89:0x3fc9cb30 0x4037f18d:0x3fc9cb50 0x403770f3:0x3fc9cbc0 0x40377211:0x3fc9cbf0 0x403772e0:0x3fc9cc10 0x42081886:0x3fc9cc40 0x4208237f:0x3fc9ccc0 0x403832df:0x3fc9ccf0 0x4201082d:0x3fc9cd50 0x403777fe:0x3fc9cd90 0x40378ec9:0x3fc9cdd0 0x40378f3e:0x3fc9cdf0 0x40378c7d:0x3fc9ce10 0x4037c65b:0x3fcb2ec0 0x40378789:0x3fcb2ee0 0x403787fd:0x3fcb2f00 0x420107d9:0x3fcb2f20 0x42010808:0x3fcb2f70 0x42010850:0x3fcb2fb0 0x4201261d:0x3fcb2fe0 0x4200fe78:0x3fcb3010 0x4208bcc2:0x3fcb3050
+
+
+
+
+ELF file SHA256: eb71eae90
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037fc11
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xda0
+load:0x403cb700,len:0x2f54
+entry 0x403c8908
+[0;32mI (29) boot: ESP-IDF v6.0.2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul 21 2026 22:17:42[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.2[0m
+[0;32mI (32) boot: efuse block revision: v1.4[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1e2e0h (123616) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=0002e308 vaddr=3fc9a700 size=01d10h (  7440) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=8eaach (584364) map[0m
+[0;32mI (224) esp_image: segment 3: paddr=000bead4 vaddr=3fc9c410 size=034fch ( 13564) load[0m
+[0;32mI (227) esp_image: segment 4: paddr=000c1fd8 vaddr=40374000 size=16678h ( 91768) load[0m
+[0;32mI (248) esp_image: segment 5: paddr=000d8658 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (258) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (258) boot: Disabling RNG early entropy source...[0m
+[0;32mI (269) cpu_start: Multicore app[0m
+[0;32mI (277) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (278) cpu_start: Pro cpu start user code[0m
+[0;32mI (278) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (279) app_init: Application information:[0m
+[0;32mI (283) app_init: Project name:     esp32s3_can_receiver[0m
+[0;32mI (288) app_init: App version:      1[0m
+[0;32mI (292) app_init: Compile time:     Jul 21 2026 22:17:23[0m
+[0;32mI (297) app_init: ELF file SHA256:  eb71eae90...[0m
+[0;32mI (301) app_init: ESP-IDF:          v6.0.2[0m
+[0;32mI (305) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (309) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (313) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (316) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (323) heap_init: At 3FCA3980 len 00045D90 (279 KiB): RAM[0m
+[0;32mI (328) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (333) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (338) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (344) spi_flash: detected chip: generic[0m
+[0;32mI (347) spi_flash: flash io: dio[0m
+[0;33mW (350) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (363) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (369) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (376) main_task: Started on CPU0[0m
+[0;32mI (396) main_task: Calling app_main()[0m
+[0;32mI (416) pp: pp rom version: e7ae62f[0m
+[0;32mI (416) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (426) wifi:wifi driver task: 3fceeba8, prio:23, stack:6656, core=0[0m
+[0;32mI (436) wifi:wifi firmware version: 00ad238[0m
+[0;32mI (436) wifi:wifi certification version: v7.0[0m
+[0;32mI (436) wifi:config NVS flash: enabled[0m
+[0;32mI (436) wifi:config nano formatting: disabled[0m
+[0;32mI (436) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (446) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (446) wifi:Init management short buffer num: 32[0m
+[0;32mI (446) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (456) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (456) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (466) wifi:Init static rx buffer num: 10[0m
+[0;32mI (466) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (476) wifi_init: rx ba win: 6[0m
+[0;32mI (476) wifi_init: accept mbox: 6[0m
+[0;32mI (476) wifi_init: tcpip mbox: 32[0m
+[0;32mI (476) wifi_init: udp mbox: 6[0m
+[0;32mI (486) wifi_init: tcp mbox: 6[0m
+[0;32mI (486) wifi_init: tcp tx win: 5760[0m
+[0;32mI (486) wifi_init: tcp rx win: 5760[0m
+[0;32mI (496) wifi_init: tcp mss: 1440[0m
+[0;32mI (496) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (496) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (506) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (506) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (556) wifi:mode : sta (28:84:85:45:7c:44)[0m
+[0;32mI (556) wifi:enable tsf[0m
+[0;32mI (556) CAN_RX: 正在连接WiFi: Redmi K60[0m
+[0;32mI (566) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (566) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (576) wifi:state: auth -> init (0x1c0)[0m
+[0;33mW (586) CAN_RX: WiFi断开，尝试重连...[0m
+[0;32mI (2886) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2896) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (2956) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (2986) wifi:connected with Redmi K60, aid = 4, channel 11, BW20, bssid = d2:c6:b2:0d:80:08[0m
+[0;32mI (2986) wifi:security: WPA2-PSK, phy: bgn, rssi: -21, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (2996) wifi:pm start, type: 1[0m
+
+[0;32mI (2996) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2996) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (3006) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (3016) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (3036) wifi:<ba-add>idx:0 (ifx:0, d2:c6:b2:0d:80:08), tid:0, ssn:0, winSize:64[0m
+[0;32mI (4056) esp_netif_handlers: sta ip: 192.168.45.54, mask: 255.255.255.0, gw: 192.168.45.92[0m
+[0;32mI (4056) CAN_RX: 获取到IP: 192.168.45.54[0m
+[0;32mI (4056) CAN_RX: WiFi连接成功[0m
+[0;32mI (4056) CAN_RX: UDP目标地址已设置: 192.168.45.251:8888[0m
+[0;32mI (4066) CAN_RX: MCP2515 CAN节点已启动，波特率=500000，等待接收并转发...[0m
+[0;32mI (4066) main_task: Returned from app_main()[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 01 00 00 00 1E 00 00 ]
+[0;33mW (4626) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FE 00 00 00 1E 00 00 ]
+[0;33mW (4766) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FE 00 00 00 1E 00 00 ]
+[0;33mW (4906) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 00 00 00 00 1E 00 00 ]
+[0;33mW (5036) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (5066) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (5166) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FE 00 00 00 1E 00 00 ]
+[0;33mW (5306) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[02 FE 00 00 00 1E 00 00 ]
+[0;33mW (5416) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 00 00 00 00 1E 00 00 ]
+ID=0x1B8  DLC=8  DATA=[B7 30 60 EA 66 8A A5 36 ]
+[0;33mW (5546) CAN_RX: UDP发送失败: errno 12[0m
+[0;33mW (5546) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (5706) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (5846) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (5976) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (6066) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (6116) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+[0;33mW (6236) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (6386) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (6516) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (6656) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+[0;33mW (6776) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (6886) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (7016) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (7066) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 05 00 00 00 1E 00 00 ]
+[0;33mW (7116) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 08 00 00 00 1E 00 00 ]
+[0;33mW (7236) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (7356) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0D 00 00 00 1E 00 00 ]
+[0;33mW (7466) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 10 00 00 00 1E 00 00 ]
+[0;33mW (7596) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 10 00 00 00 1E 00 00 ]
+[0;33mW (7736) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 11 00 00 00 1E 00 00 ]
+[0;33mW (7866) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 0E 00 00 00 1E 00 00 ]
+[0;33mW (8006) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (8066) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 07 00 00 00 1E 00 00 ]
+[0;33mW (8156) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (8276) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 00 00 00 00 1E 00 00 ]
+[0;33mW (8386) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 00 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 03 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 04 00 00 00 1E 00 00 ]
+[0;33mW (8856) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+[0;33mW (8996) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (9066) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 0C 00 00 00 1E 00 00 ]
+[0;33mW (9116) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x1FFFFFFF  DLC=8  DATA=[FF FF FF FF FF FF FF FF ]
+ID=0x1FFFFFFF  DLC=8  DATA=[FF FF FF FF FF FF FF FF ]
+ID=0x1FFFFFFF  DLC=8  DATA=[FF FF FF FF FF FF FF FF ]
+ID=0x1FFFFFFF  DLC=8  DATA=[FF FF FF FF FF FF FF FF ]
+[0;33mW (9226) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x1FFFFFFF  DLC=8  DATA=[FF FF FF FF FF FF FF FF ]
+ID=0x1FFFFFFF  DLC=8  DATA=[FF FF FF FF FF FF FF FF ]
+[0;33mW (9236) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x1FFFFFFF  DLC=8  DATA=[FF FF FF FF FF FF FF FF ]
+ID=0x1FFFFFFF  DLC=8  DATA=[FF FF FF FF FF FF FF FF ]
+ID=0x1FFFFFFF  DLC=8  DATA=[FF FF FF FF FF FF FF FF ]
+[0;33mW (9256) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x1FFFFFFF  DLC=8  DATA=[FF FF FF FF FF FF FF FF ]
+ID=0x1FFFFFFF  DLC=8  DATA=[FF FF FF FF FF FF FF FF ]
+[0;33mW (9266) CAN_RX: UDP发送失败: errno 12[0m
+ID=0x1FFFFFFF  DLC=8  DATA=[FF FF FF FF FF FF FF FF ]
+ID=0x000  DLC=0  DATA=[]
+ID=0x000  DLC=0  DATA=[]
+[0;33mW (9286) CAN_RX: UDP发送失败: errno 12[0m
+[0;33mW (9286) CAN_RX: UDP发送失败: errno 12[0m
+[0;33mW (9286) CAN_RX: UDP发送失败: errno 12[0m
+[0;33mW (9296) CAN_RX: UDP发送失败: errno 12[0m
+[0;33mW (9296) CAN_RX: UDP发送失败: errno 12[0m
+[0;33mW (9306) CAN_RX: UDP发送失败: errno 12[0m
+[0;33mW (9306) CAN_RX: UDP发送失败: errno 12[0m
+[0;33mW (9306) CAN_RX: UDP发送失败: errno 12[0m
+[0;33mW (9316) CAN_RX: UDP发送失败: errno 12[0m
+[0;33mW (9316) CAN_RX: UDP发送失败: errno 12[0m
+[0;32mI (10066) CAN_RX: [状态监控] state=BUS_OFF(总线关闭!!) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (11066) CAN_RX: [状态监控] state=BUS_OFF(总线关闭!!) TEC=0 REC=29 累计总线错误=0 队列剩余=4[0m
+[0;32mI (12066) CAN_RX: [状态监控] state=BUS_OFF(总线关闭!!) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (13066) CAN_RX: [状态监控] state=BUS_OFF(总线关闭!!) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (14066) CAN_RX: [状态监控] state=BUS_OFF(总线关闭!!) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (15066) CAN_RX: [状态监控] state=BUS_OFF(总线关闭!!) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (16066) CAN_RX: [状态监控] state=BUS_OFF(总线关闭!!) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (17066) CAN_RX: [状态监控] state=BUS_OFF(总线关闭!!) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (18066) CAN_RX: [状态监控] state=BUS_OFF(总线关闭!!) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (19066) CAN_RX: [状态监控] state=BUS_OFF(总线关闭!!) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (20066) CAN_RX: [状态监控] state=BUS_OFF(总线关闭!!) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (21066) CAN_RX: [状态监控] state=BUS_OFF(总线关闭!!) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (22066) CAN_RX: [状态监控] state=BUS_OFF(总线关闭!!) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (23066) CAN_RX: [状态监控] state=BUS_OFF(总线关闭!!) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (24066) CAN_RX: [状态监控] state=BUS_OFF(总线关闭!!) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (25066) CAN_RX: [状态监控] state=BUS_OFF(总线关闭!!) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (26066) CAN_RX: [状态监控] state=BUS_OFF(总线关闭!!) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (27066) CAN_RX: [状态监控] state=BUS_OFF(总线关闭!!) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (28066) CAN_RX: [状态监控] state=BUS_OFF(总线关闭!!) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (29066) CAN_RX: [状态监控] state=BUS_OFF(总线关闭!!) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (30066) CAN_RX: [状态监控] state=BUS_OFF(总线关闭!!) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (31066) CAN_RX: [状态监控] state=BUS_OFF(总线关闭!!) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (32066) CAN_RX: [状态监控] state=BUS_OFF(总线关闭!!) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m

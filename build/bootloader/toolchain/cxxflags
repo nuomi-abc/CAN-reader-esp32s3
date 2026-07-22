@@ -1,0 +1,6 @@
+"-specs=F:/test_can/Experiment/esp32s3_can_receiver/build/bootloader/specs/picolibc.specs"
+-mlongcalls
+-fno-builtin-memcpy
+-fno-builtin-memset
+-fno-builtin-bzero
+-fno-rtti

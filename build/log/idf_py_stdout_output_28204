@@ -1,0 +1,13 @@
+Command: ninja app
+[1/6] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[2/6] Linking C static library esp-idf\main\libmain.a
+[3/6] Generating esp-idf/esp_system/ld/sections.ld
+[4/6] Linking CXX executable esp32s3_can_receiver.elf
+[5/6] Generating binary image from built executable
+esptool v5.3.1
+Creating ESP32-S3 image...
+Merged 3 ELF sections.
+Successfully created ESP32-S3 image.
+Generated F:/test_can/Experiment/esp32s3_can_receiver/build/esp32s3_can_receiver.bin
+[6/6] C:\Windows\system32\cmd.exe /C "cd /D F:\test_can\Experiment\esp32s3_can_receiver\build && C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe F:/.espressif/v6.0.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app F:/test_can/Experiment/esp32s3_can_receiver/build/partition_table/partition-table.bin F:/test_can/Experiment/esp32s3_can_receiver/build/esp32s3_can_receiver.bin"
+esp32s3_can_receiver.bin binary size 0xc84f0 bytes. Smallest app partition is 0x100000 bytes. 0x37b10 bytes (22%) free.

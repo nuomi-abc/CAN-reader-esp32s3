@@ -1,0 +1,1024 @@
+Command: C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe F:\.espressif\v6.0.2\esp-idf\tools/idf_monitor.py -p COM9 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 F:\test_can\Experiment\esp32s3_can_receiver\build\esp32s3_can_receiver.elf F:\test_can\Experiment\esp32s3_can_receiver\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v6.0.2\venv\Scripts\python.exe' 'F:\.espressif\v6.0.2\esp-idf\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xda0
+load:0x403cb700,len:0x2f54
+entry 0x403c8908
+[0;32mI (24) boot: ESP-IDF v6.0.2 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Jul 21 2026 22:17:42[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.4[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1e330h (123696) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0002e358 vaddr=3fc9a700 size=01cc0h (  7360) load[0m
+[0;32mI (111) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=8eaa0h (584352) map[0m
+[0;32mI (219) esp_image: segment 3: paddr=000beac8 vaddr=3fc9c3c0 size=0354ch ( 13644) load[0m
+[0;32mI (223) esp_image: segment 4: paddr=000c201c vaddr=40374000 size=16678h ( 91768) load[0m
+[0;32mI (244) esp_image: segment 5: paddr=000d869c vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (254) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (254) boot: Disabling RNG early entropy source...[0m
+[0;32mI (264) cpu_start: Multicore app[0m
+[0;32mI (273) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (273) cpu_start: Pro cpu start user code[0m
+[0;32mI (273) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (275) app_init: Application information:[0m
+[0;32mI (279) app_init: Project name:     esp32s3_can_receiver[0m
+[0;32mI (284) app_init: App version:      1[0m
+[0;32mI (287) app_init: Compile time:     Jul 21 2026 22:17:23[0m
+[0;32mI (292) app_init: ELF file SHA256:  be6274162...[0m
+[0;32mI (297) app_init: ESP-IDF:          v6.0.2[0m
+[0;32mI (300) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (304) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (308) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (312) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (318) heap_init: At 3FCA3980 len 00045D90 (279 KiB): RAM[0m
+[0;32mI (323) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (329) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (334) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (340) spi_flash: detected chip: generic[0m
+[0;32mI (343) spi_flash: flash io: dio[0m
+[0;33mW (346) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (359) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (365) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (372) main_task: Started on CPU0[0m
+[0;32mI (392) main_task: Calling app_main()[0m
+[0;32mI (412) pp: pp rom version: e7ae62f[0m
+[0;32mI (412) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (422) wifi:wifi driver task: 3fceeb24, prio:23, stack:6656, core=0[0m
+[0;32mI (432) wifi:wifi firmware version: 00ad238[0m
+[0;32mI (432) wifi:wifi certification version: v7.0[0m
+[0;32mI (432) wifi:config NVS flash: enabled[0m
+[0;32mI (432) wifi:config nano formatting: disabled[0m
+[0;32mI (432) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (442) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (442) wifi:Init management short buffer num: 32[0m
+[0;32mI (442) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (452) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (452) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (462) wifi:Init static rx buffer num: 10[0m
+[0;32mI (462) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (472) wifi_init: rx ba win: 6[0m
+[0;32mI (472) wifi_init: accept mbox: 6[0m
+[0;32mI (472) wifi_init: tcpip mbox: 32[0m
+[0;32mI (472) wifi_init: udp mbox: 6[0m
+[0;32mI (482) wifi_init: tcp mbox: 6[0m
+[0;32mI (482) wifi_init: tcp tx win: 5760[0m
+[0;32mI (482) wifi_init: tcp rx win: 5760[0m
+[0;32mI (492) wifi_init: tcp mss: 1440[0m
+[0;32mI (492) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (492) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (502) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (502) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (562) wifi:mode : sta (28:84:85:45:7c:44)[0m
+[0;32mI (562) wifi:enable tsf[0m
+[0;32mI (562) CAN_RX: 正在连接WiFi: Redmi K60[0m
+[0;32mI (582) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (582) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (602) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (672) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (702) wifi:connected with Redmi K60, aid = 4, channel 11, BW20, bssid = d2:c6:b2:0d:80:08[0m
+[0;32mI (702) wifi:security: WPA2-PSK, phy: bgn, rssi: -26, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (712) wifi:pm start, type: 1[0m
+
+[0;32mI (712) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (712) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (752) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (752) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (762) wifi:<ba-add>idx:0 (ifx:0, d2:c6:b2:0d:80:08), tid:0, ssn:0, winSize:64[0m
+[0;32mI (1802) esp_netif_handlers: sta ip: 192.168.45.54, mask: 255.255.255.0, gw: 192.168.45.92[0m
+[0;32mI (1802) CAN_RX: 获取到IP: 192.168.45.54[0m
+[0;32mI (1802) CAN_RX: WiFi连接成功[0m
+[0;32mI (1802) CAN_RX: UDP目标地址已设置: 192.168.45.251:8888[0m
+[0;32mI (1812) CAN_RX: MCP2515 CAN节点已启动，波特率=500000，等待接收并转发...[0m
+[0;32mI (1812) main_task: Returned from app_main()[0m
+ID=0x100  DLC=8  DATA=[05 E6 00 4E 00 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 E3 00 4D 00 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 DF 00 4D 00 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 DC 00 4D 00 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 D9 00 4D 00 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 D6 00 4D 00 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 D2 00 4C 00 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 CD 00 4C 00 00 00 00 ]
+[0;32mI (2812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[05 CA 00 4C 00 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 C3 00 4C 00 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 C0 00 4C 01 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 BD 00 4B 02 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 BA 00 4B 05 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 B9 00 4B 07 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 B8 00 4B 06 00 00 00 ]
+[0;32mI (3812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[05 B7 00 4B 06 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 B6 00 4B 07 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 B6 00 4B 07 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 B6 00 4B 08 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 B7 00 4B 08 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 B8 00 4B 08 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 B9 00 4B 08 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 BA 00 4C 0A 00 00 00 ]
+[0;32mI (4812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[05 BB 00 4C 09 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 BE 00 4C 09 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 BF 00 4C 09 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 C3 00 4C 0B 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 C6 00 4C 0C 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 C8 00 4C 0D 00 00 00 ]
+[0;32mI (5812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[05 CC 00 4D 0D 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 CF 00 4D 0D 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 D3 00 4D 0C 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 D5 00 4D 0D 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 D8 00 4D 0D 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 DB 00 4D 0D 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 DF 00 4E 0D 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 E3 00 4E 0D 00 00 00 ]
+[0;32mI (6812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[05 E6 00 4E 0C 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 E9 00 4E 0C 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 ED 00 4E 0C 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 F1 00 4F 0C 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 F5 00 4F 0D 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 F9 00 4F 15 00 00 00 ]
+[0;32mI (7812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[06 01 00 4F 2C 00 00 00 ]
+ID=0x100  DLC=8  DATA=[06 06 00 50 2C 00 00 00 ]
+ID=0x100  DLC=8  DATA=[06 09 00 50 2B 00 00 00 ]
+ID=0x100  DLC=8  DATA=[06 0D 00 50 29 00 00 00 ]
+ID=0x100  DLC=8  DATA=[06 11 00 50 28 00 00 00 ]
+ID=0x100  DLC=8  DATA=[06 16 00 50 2A 00 00 00 ]
+ID=0x100  DLC=8  DATA=[06 1B 00 51 2F 00 00 00 ]
+ID=0x100  DLC=8  DATA=[06 1F 00 51 4B 00 00 00 ]
+[0;32mI (8812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[06 25 00 52 57 00 00 00 ]
+ID=0x100  DLC=8  DATA=[08 BC 00 51 57 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0B 66 00 52 55 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0D EA 00 52 5A 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0F 1A 00 54 64 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0F B8 00 55 64 00 00 00 ]
+ID=0x100  DLC=8  DATA=[10 1F 00 56 64 00 00 00 ]
+[0;32mI (9812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[10 72 00 58 64 00 00 00 ]
+ID=0x100  DLC=8  DATA=[10 AC 00 59 64 00 00 00 ]
+ID=0x100  DLC=8  DATA=[11 36 00 5B 64 00 00 00 ]
+ID=0x100  DLC=8  DATA=[11 76 00 5D 4F 00 00 00 ]
+ID=0x100  DLC=8  DATA=[11 34 00 5D 12 00 00 00 ]
+ID=0x100  DLC=8  DATA=[10 55 00 5D 03 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0F 45 00 5D 00 00 00 00 ]
+[0;32mI (10812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[0E 7C 00 5D 00 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0E 2D 00 5D 00 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0E 11 00 5D 00 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0D FC 00 5D 00 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0D EF 00 5C 00 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0D E6 00 5C 00 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0D E4 00 5C 06 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0D E9 00 5D 0F 00 00 00 ]
+[0;32mI (11812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[0D FA 00 5D 20 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0E 1A 00 5E 2C 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0E 3A 00 5F 30 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0E 60 00 60 34 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0E B5 00 62 2E 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0E BE 00 62 09 00 00 00 ]
+[0;32mI (12812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[0E BF 00 62 05 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0E 5A 00 62 02 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0D A4 00 63 04 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0D 10 00 63 15 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0C 50 00 64 34 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0C 08 00 65 36 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0B E7 00 66 24 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0B D5 00 66 0F 00 00 00 ]
+[0;32mI (13812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[0B D7 00 66 10 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0B DE 00 67 17 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0B F5 00 68 36 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0C 12 00 69 39 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0C 28 00 69 24 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0C 37 00 6A 17 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0C 40 00 6A 14 00 00 00 ]
+[0;32mI (14812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[0C 5B 00 6B 2F 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0C 7F 00 6C 50 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0C 9B 00 6D 2A 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0C 92 00 6C 03 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0C 8D 00 6D 03 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0C A3 00 6C 03 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0D 14 00 6B 06 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0E 00 00 6C 18 00 00 00 ]
+[0;32mI (15812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[0E DC 00 6C 2C 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0F D8 00 6D 2E 00 00 00 ]
+ID=0x100  DLC=8  DATA=[10 3E 00 6D 2E 00 00 00 ]
+ID=0x100  DLC=8  DATA=[10 69 00 6D 2A 00 00 00 ]
+ID=0x100  DLC=8  DATA=[10 7C 00 6E 19 00 00 00 ]
+ID=0x100  DLC=8  DATA=[10 84 00 6E 19 00 00 00 ]
+ID=0x100  DLC=8  DATA=[10 8D 00 6E 12 00 00 00 ]
+ID=0x100  DLC=8  DATA=[10 91 00 6E 11 00 00 00 ]
+[0;32mI (16812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[10 9F 00 6F 1F 00 00 00 ]
+ID=0x100  DLC=8  DATA=[10 BE 00 6F 2E 00 00 00 ]
+ID=0x100  DLC=8  DATA=[10 D9 00 70 36 00 00 00 ]
+ID=0x100  DLC=8  DATA=[10 8F 00 71 30 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0F BB 00 71 2A 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0E B0 00 72 1C 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0D CC 00 72 0E 00 00 00 ]
+[0;32mI (17812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[0D 79 00 72 1F 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0D 68 00 73 2C 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0D 6A 00 74 2C 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0D 72 00 74 2B 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0D 7E 00 75 2B 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0D 9C 00 75 2A 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0D BA 00 77 2A 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0D 2C 00 76 2A 00 00 00 ]
+[0;32mI (18812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[0C 64 00 77 2A 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0B 94 00 77 2A 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0B 4A 00 7A 29 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0B 28 00 78 29 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0B 04 00 78 29 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0A F7 00 79 29 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0A F9 00 79 29 00 00 00 ]
+[0;32mI (19812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[0A F9 00 79 29 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0A FA 00 7A 29 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0B 00 00 7A 2A 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0B 0B 00 7B 2A 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0B 16 00 7B 2A 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0B 25 00 7C 2A 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0B 0D 00 7C 2A 00 00 00 ]
+[0;32mI (20812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[0A 6E 00 7D 2A 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0A 0B 00 7D 2A 00 00 00 ]
+ID=0x100  DLC=8  DATA=[09 C0 00 7D 2A 00 00 00 ]
+ID=0x100  DLC=8  DATA=[09 A5 00 7D 2A 00 00 00 ]
+ID=0x100  DLC=8  DATA=[09 99 00 7E 2A 00 00 00 ]
+ID=0x100  DLC=8  DATA=[09 91 00 7D 2A 00 00 00 ]
+ID=0x100  DLC=8  DATA=[09 8B 00 7D 2A 00 00 00 ]
+ID=0x100  DLC=8  DATA=[09 86 00 7E 2A 00 00 00 ]
+[0;32mI (21812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[09 8F 00 7F 2E 00 00 00 ]
+ID=0x100  DLC=8  DATA=[09 94 00 7F 2E 00 00 00 ]
+ID=0x100  DLC=8  DATA=[09 9C 00 7F 2C 00 00 00 ]
+ID=0x100  DLC=8  DATA=[09 A3 00 80 2C 00 00 00 ]
+ID=0x100  DLC=8  DATA=[09 AA 00 80 2A 00 00 00 ]
+ID=0x100  DLC=8  DATA=[09 B0 00 81 27 00 00 00 ]
+[0;32mI (22812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[09 B4 00 81 19 00 00 00 ]
+ID=0x100  DLC=8  DATA=[09 B4 00 80 0B 00 00 00 ]
+ID=0x100  DLC=8  DATA=[09 AF 00 80 01 00 00 00 ]
+ID=0x100  DLC=8  DATA=[09 4D 00 80 01 00 00 00 ]
+ID=0x100  DLC=8  DATA=[08 EB 00 7F 01 00 00 00 ]
+ID=0x100  DLC=8  DATA=[08 80 00 7F 01 00 00 00 ]
+ID=0x100  DLC=8  DATA=[08 12 00 7F 01 00 00 00 ]
+[0;32mI (23812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[07 CA 00 7F 01 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 AA 00 7E 01 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 9C 00 7E 01 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 91 00 7D 01 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 8A 00 7D 02 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 80 00 7C 04 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 78 00 7C 0A 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 73 00 7C 10 00 00 00 ]
+[0;32mI (24812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[07 6E 00 7B 11 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 69 00 7B 11 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 66 00 7B 12 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 64 00 7B 12 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 62 00 7B 11 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 61 00 7B 11 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 5E 00 7A 12 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 5C 00 7A 12 00 00 00 ]
+[0;32mI (25812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[07 5B 00 7A 13 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 59 00 7A 13 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 58 00 7A 13 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 57 00 7A 13 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 56 00 7A 13 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 55 00 7A 13 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 54 00 7A 14 00 00 00 ]
+[0;32mI (26812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[07 52 00 7A 14 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 51 00 7A 15 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 51 00 7A 15 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 50 00 7A 15 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 4F 00 7A 15 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 4E 00 7A 16 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 4D 00 7A 15 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 4C 00 7A 15 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 4B 00 79 16 00 00 00 ]
+[0;32mI (27812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[07 4A 00 79 16 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 49 00 79 16 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 48 00 79 16 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 47 00 79 17 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 47 00 79 17 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 46 00 79 18 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 45 00 79 19 00 00 00 ]
+[0;32mI (28812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[07 45 00 79 1A 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 45 00 79 1D 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 44 00 79 1F 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 45 00 79 22 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 46 00 79 2A 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 47 00 79 2B 00 00 00 ]
+[0;32mI (29812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[07 49 00 79 2B 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 4B 00 7A 2C 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 4D 00 7A 2C 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 50 00 7A 2E 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 52 00 7A 31 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 56 00 7A 34 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 59 00 7B 36 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 5D 00 7B 35 00 00 00 ]
+[0;32mI (30812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[07 61 00 7B 35 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 66 00 7B 35 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 69 00 7C 35 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 6E 00 7C 35 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 76 00 7D 34 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 7A 00 7D 32 00 00 00 ]
+[0;32mI (31812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[07 7E 00 7D 31 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 82 00 7D 31 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 88 00 7D 32 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 8D 00 7E 31 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 91 00 7E 30 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 94 00 7E 32 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 9A 00 7F 32 00 00 00 ]
+[0;32mI (32812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[07 9F 00 7F 30 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 A5 00 80 31 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 AA 00 80 32 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 AE 00 80 32 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 B2 00 80 32 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 B8 00 81 32 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 BC 00 81 31 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 C1 00 81 31 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 C7 00 82 32 00 00 00 ]
+[0;32mI (33812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[07 CB 00 82 32 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 D2 00 82 31 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 D8 00 83 31 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 DE 00 83 30 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 E4 00 7F 2E 00 00 00 ]
+ID=0x100  DLC=8  DATA=[04 0B 00 64 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[02 12 00 20 00 64 00 00 ]
+[0;32mI (34812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[00 D9 00 03 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 58 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 24 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 0E 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 06 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 02 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 01 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+[0;32mI (35812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+[0;32mI (36812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 01 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+[0;32mI (37812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+[0;32mI (38812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+[0;32mI (39812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+[0;32mI (40812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+[0;32mI (41812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[00 00 00 00 00 64 00 00 ]
+ID=0x100  DLC=8  DATA=[01 18 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[02 38 00 00 00 1E 00 00 ]
+[0;32mI (42812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[02 AE 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[02 E1 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[02 F6 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 02 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 09 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 0A 00 00 00 1E 00 00 ]
+ID=0x100  DLC=8  DATA=[03 0A 00 00 01 00 00 00 ]
+ID=0x100  DLC=8  DATA=[03 2F 00 00 32 00 00 00 ]
+[0;32mI (43812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 80 00 02 3E 00 00 00 ]
+ID=0x100  DLC=8  DATA=[03 C0 00 03 3C 00 00 00 ]
+ID=0x100  DLC=8  DATA=[03 EA 00 04 2E 00 00 00 ]
+ID=0x100  DLC=8  DATA=[04 05 00 05 16 00 00 00 ]
+ID=0x100  DLC=8  DATA=[04 20 00 06 10 00 00 00 ]
+ID=0x100  DLC=8  DATA=[04 32 00 08 0C 00 00 00 ]
+ID=0x100  DLC=8  DATA=[04 3C 00 08 09 00 00 00 ]
+[0;32mI (44812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[04 36 00 08 04 00 00 00 ]
+ID=0x100  DLC=8  DATA=[03 E4 00 08 00 00 00 00 ]
+ID=0x100  DLC=8  DATA=[03 88 00 08 00 00 00 00 ]
+ID=0x100  DLC=8  DATA=[03 3F 00 06 00 00 00 00 ]
+ID=0x100  DLC=8  DATA=[03 1B 00 06 00 00 00 00 ]
+ID=0x100  DLC=8  DATA=[03 09 00 06 00 00 00 00 ]
+ID=0x100  DLC=8  DATA=[02 FD 00 06 00 00 00 00 ]
+ID=0x100  DLC=8  DATA=[02 FB 00 06 00 00 00 00 ]
+[0;32mI (45812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[02 FB 00 06 00 00 00 00 ]
+ID=0x100  DLC=8  DATA=[02 FB 00 06 00 00 00 00 ]
+ID=0x100  DLC=8  DATA=[03 02 00 06 0A 00 00 00 ]
+ID=0x100  DLC=8  DATA=[03 69 00 07 38 00 00 00 ]
+ID=0x100  DLC=8  DATA=[03 B7 00 08 44 00 00 00 ]
+ID=0x100  DLC=8  DATA=[04 06 00 08 47 00 00 00 ]
+ID=0x100  DLC=8  DATA=[04 2F 00 09 40 00 00 00 ]
+[0;32mI (46812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[03 FC 00 09 00 00 00 00 ]
+ID=0x100  DLC=8  DATA=[03 92 00 08 00 00 00 00 ]
+ID=0x100  DLC=8  DATA=[03 4D 00 08 00 00 00 00 ]
+ID=0x100  DLC=8  DATA=[03 34 00 07 00 00 00 00 ]
+ID=0x100  DLC=8  DATA=[03 59 00 08 1D 00 00 00 ]
+ID=0x100  DLC=8  DATA=[03 B4 00 08 48 00 00 00 ]
+ID=0x100  DLC=8  DATA=[04 18 00 08 57 00 00 00 ]
+[0;32mI (47812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[04 65 00 0A 5D 00 00 00 ]
+ID=0x100  DLC=8  DATA=[04 AE 00 0A 61 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 16 00 0B 64 00 00 00 ]
+ID=0x100  DLC=8  DATA=[05 A0 00 0C 64 00 00 00 ]
+ID=0x100  DLC=8  DATA=[06 49 00 0E 64 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 10 00 10 64 00 00 00 ]
+ID=0x100  DLC=8  DATA=[07 F0 00 13 64 00 00 00 ]
+ID=0x100  DLC=8  DATA=[08 A5 00 15 64 00 00 00 ]
+[0;32mI (48812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[09 AF 00 18 64 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0A D9 00 1B 64 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0C 23 00 1E 64 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0D BB 00 22 64 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0E EF 00 24 64 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0F C9 00 26 64 00 00 00 ]
+ID=0x100  DLC=8  DATA=[10 CD 00 28 64 00 00 00 ]
+ID=0x100  DLC=8  DATA=[11 B6 00 2A 64 00 00 00 ]
+[0;32mI (49812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[12 79 00 2C 32 00 00 00 ]
+ID=0x100  DLC=8  DATA=[12 1D 00 2E 32 00 00 00 ]
+ID=0x100  DLC=8  DATA=[11 10 00 30 32 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0F D1 00 33 62 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0F 7E 00 35 62 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0F B7 00 37 5D 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0F F8 00 38 24 00 00 00 ]
+[0;32mI (50812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[0F DF 00 37 01 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0F B6 00 37 00 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0F 9A 00 36 04 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0F AF 00 37 38 00 00 00 ]
+ID=0x100  DLC=8  DATA=[10 30 00 39 62 00 00 00 ]
+ID=0x100  DLC=8  DATA=[10 B2 00 3B 61 00 00 00 ]
+ID=0x100  DLC=8  DATA=[11 40 00 3D 49 00 00 00 ]
+[0;32mI (51812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[11 98 00 3E 35 00 00 00 ]
+ID=0x100  DLC=8  DATA=[11 E2 00 3F 36 00 00 00 ]
+ID=0x100  DLC=8  DATA=[12 36 00 41 3C 00 00 00 ]
+ID=0x100  DLC=8  DATA=[12 93 00 42 55 00 00 00 ]
+ID=0x100  DLC=8  DATA=[12 0F 00 43 32 00 00 00 ]
+ID=0x100  DLC=8  DATA=[10 C8 00 45 2E 00 00 00 ]
+ID=0x100  DLC=8  DATA=[0F 70 00 45 0B 00 00 00 ]
+[0;32mI (52812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+ID=0x100  DLC=8  DATA=[0D 82 00 44 00 00 00 00 ]
+[0;32mI (53812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (54812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (55812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (56812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (57812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (58812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (59812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (60812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (61812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (62812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (63812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (64812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (65812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (66812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (67812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (68812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (69812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (70812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (71812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (72812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (73812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (74812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (75812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (76812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (77812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (78812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (79812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (80812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (81812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (82812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (83812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (84812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (85812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (86812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (87812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (88812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (89812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (90812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (91812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (92812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (93812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (94812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (95812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (96812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (97812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (98812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (99812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (100812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (101812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (102812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (103812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (104812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (105812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (106812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (107812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (108812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (109812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (110812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (111812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (112812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (113812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (114812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (115812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (116812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (117812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (118812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (119812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (120812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (121812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (122812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (123812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (124812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (125812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (126812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (127812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (128812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (129812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (130812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (131812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (132812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (133812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (134812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (135812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (136812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (137812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (138812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (139812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (140812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (141812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (142812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (143812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (144812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (145812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (146812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (147812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (148812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (149812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (150812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (151812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (152812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (153812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (154812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (155812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (156812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (157812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (158812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (159812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (160812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (161812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (162812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (163812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (164812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (165812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (166812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (167812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (168812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (169812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (170812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (171812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (172812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (173812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (174812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (175812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (176812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (177812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (178812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (179812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (180812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (181812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (182812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (183812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (184812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (185812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (186812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (187812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (188812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (189812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (190812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (191812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (192812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (193812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (194812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (195812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (196812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (197812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (198812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (199812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (200812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (201812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (202812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (203812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (204812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (205812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (206812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (207812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (208812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (209812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (210812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (211812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (212812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (213812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (214812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (215812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (216812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (217812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (218812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (219812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (220812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (221812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (222812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (223812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (224812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (225812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (226812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (227812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (228812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (229812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (230812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (231812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (232812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (233812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (234812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (235812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (236812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (237812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (238812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (239812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (240812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (241812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (242812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (243812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=79 累计总线错误=0 队列剩余=4[0m
+[0;32mI (244812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=1 累计总线错误=0 队列剩余=4[0m
+[0;32mI (245812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (246812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (247812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (248812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (249812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=4 REC=255 累计总线错误=0 队列剩余=4[0m
+[0;32mI (250812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (251812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (252812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (253812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (254812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (255812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (256812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (257812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (258812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (259812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (260812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (261812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (262812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (263812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (264812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (265812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (266812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (267812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (268812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (269812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (270812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=7 累计总线错误=0 队列剩余=4[0m
+[0;32mI (271812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (272812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (273812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (274812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (275812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (276812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=35 累计总线错误=0 队列剩余=4[0m
+[0;32mI (277812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (278812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (279812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (280812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (281812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (282812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (283812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (284812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (285812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (286812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (287812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=127 累计总线错误=0 队列剩余=4[0m
+[0;32mI (288812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (289812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (290812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (291812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (292812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (293812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (294812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (295812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (296812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=7 REC=255 累计总线错误=0 队列剩余=4[0m
+[0;32mI (297812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (298812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=63 累计总线错误=0 队列剩余=4[0m
+[0;32mI (299812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=1 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (300812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (301812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (302812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (303812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (304812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (305812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (306812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (307812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (308812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (309812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (310812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (311812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (312812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (313812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (314812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (315812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (316812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (317812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (318812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (319812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (320812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (321812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (322812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (323812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (324812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (325812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (326812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (327812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (328812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (329812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (330812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (331812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (332812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (333812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (334812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (335812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (336812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (337812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (338812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (339812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (340812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (341812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (342812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (343812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (344812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (345812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (346812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (347812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (348812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (349812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (350812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (351812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (352812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (353812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (354812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (355812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (356812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (357812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=4 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (358812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (359812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (360812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (361812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (362812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (363812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (364812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (365812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (366812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (367812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (368812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (369812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (370812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (371812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (372812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (373812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (374812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (375812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (376812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (377812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (378812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (379812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (380812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (381812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (382812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (383812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (384812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (385812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (386812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (387812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (388812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (389812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (390812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (391812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (392812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (393812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (394812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (395812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (396812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (397812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (398812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (399812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (400812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (401812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (402812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (403812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (404812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (405812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (406812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (407812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (408812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (409812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (410812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (411812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (412812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (413812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (414812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (415812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (416812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (417812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (418812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (419812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (420812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (421812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (422812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (423812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (424812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (425812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (426812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (427812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (428812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (429812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (430812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (431812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (432812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (433812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (434812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (435812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (436812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (437812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (438812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (439812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (440812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (441812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (442812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (443812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (444812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (445812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (446812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (447812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (448812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (449812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (450812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (451812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (452812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (453812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (454812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (455812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (456812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (457812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (458812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (459812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (460812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (461812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (462812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (463812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (464812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (465812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (466812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (467812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (468812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (469812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (470812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (471812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (472812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (473812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (474812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (475812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (476812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (477812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (478812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (479812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (480812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (481812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (482812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (483812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (484812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (485812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (486812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (487812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (488812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (489812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (490812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (491812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (492812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (493812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (494812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (495812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (496812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (497812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (498812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (499812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (500812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (501812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (502812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (503812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (504812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (505812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (506812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (507812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (508812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (509812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (510812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (511812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (512812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (513812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (514812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (515812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (516812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (517812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (518812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (519812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (520812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (521812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (522812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (523812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (524812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (525812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (526812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (527812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (528812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (529812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (530812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (531812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (532812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (533812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (534812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (535812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (536812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (537812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (538812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (539812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m
+[0;32mI (540812) CAN_RX: [状态监控] state=ERROR_ACTIVE(正常) TEC=0 REC=0 累计总线错误=0 队列剩余=4[0m

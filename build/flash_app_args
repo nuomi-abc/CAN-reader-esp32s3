@@ -1,0 +1,2 @@
+--flash-mode dio --flash-freq 80m --flash-size 2MB
+0x10000 esp32s3_can_receiver.bin
