@@ -27,6 +27,8 @@ static const char *TAG = "CAN_RX";
 #define UDP_SERVER_IP   "192.168.45.251"
 #define UDP_SERVER_PORT 8888
 
+/*这里使用的时UDP传输，你需要有一个LAN内的终端来接收汽车的CAN数据帧，这里的IP地址仅供参考*/
+
 /* ---------- MCP2515接线 ---------- */
 #define MCP2515_SPI_HOST      SPI2_HOST
 #define MCP2515_SCLK_GPIO     GPIO_NUM_12
