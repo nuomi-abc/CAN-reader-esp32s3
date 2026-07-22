@@ -205,7 +205,7 @@ static bool IRAM_ATTR on_rx_done_cb(twai_node_handle_t handle,
 /* ================= 打印与发送任务================= */
 
 
-/* 打印任务：只负责打印和入队，不碰网络 */
+/* 打印任务 */
 static void print_and_send_task(void *arg)
 {
     can_frame_msg_t msg;
@@ -225,7 +225,7 @@ static void print_and_send_task(void *arg)
     }
 }
 
-/* 独立的UDP发送任务，就算网络卡死，也不会影响上面的打印任务 */
+/* UDP发送任务 */
 static void udp_send_task(void *arg)
 {
     can_frame_msg_t msg;
@@ -323,8 +323,9 @@ void app_main(void)
     cbs.on_rx_done = on_rx_done_cb;
     ESP_ERROR_CHECK(twai_node_register_event_callbacks(s_node, &cbs, NULL));
 
-    
+    /*打印任务创建*/
     xTaskCreate(print_and_send_task, "print_send_task", 4096, NULL, 4, NULL);
+    /*发送任务创建*/
     xTaskCreate(udp_send_task, "udp_send_task", 2048, NULL, 3, NULL);
 
     ESP_ERROR_CHECK(twai_node_enable(s_node));
