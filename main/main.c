@@ -28,6 +28,8 @@ static const char *TAG = "CAN_RX";
 #define UDP_SERVER_PORT 8888
 
 /*这里使用的时UDP传输，你需要有一个LAN内的终端来接收汽车的CAN数据帧，这里的IP地址仅供参考*/
+/*如果你不知道怎么写一个接收端的代码，项目目录下有一个CAN-receiver.py的脚本，只需运行就会自动记录CAN数据到文件中*/
+/*注意使用这个脚本必须提前安装python的cantools*/
 
 /* ---------- MCP2515接线 ---------- */
 #define MCP2515_SPI_HOST      SPI2_HOST
