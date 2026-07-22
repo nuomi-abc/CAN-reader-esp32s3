@@ -19,9 +19,9 @@
 
 static const char *TAG = "CAN_RX";
 
-/* ---------- WiFi配置：改成你自己的 ---------- */
-#define WIFI_SSID       "Redmi K60"
-#define WIFI_PASS       "17539290158"
+/* ---------- WiFi配置---------- */
+#define WIFI_SSID       "Your SSID"
+#define WIFI_PASS       "Your password"
 
 /* ---------- UDP目标配置 ---------- */
 #define UDP_SERVER_IP   "192.168.45.251"
@@ -38,7 +38,7 @@ static const char *TAG = "CAN_RX";
 #define CAN_BITRATE            500000
 #define MCP2515_OSC_HZ          8000000
 
-/* ---------- 队列深度：缓冲多少帧，防止瞬时突发丢帧 ---------- */
+/* ---------- 队列深度---------- */
 #define CAN_QUEUE_LEN           32
 #define UDP_QUEUE_LEN           32
 
@@ -198,7 +198,7 @@ static bool IRAM_ATTR on_rx_done_cb(twai_node_handle_t handle,
     return false;
 }
 
-/* ================= 打印与发送任务：从队列里取，互不阻塞 ================= */
+/* ================= 打印与发送任务================= */
 
 
 /* 打印任务：只负责打印和入队，不碰网络 */
